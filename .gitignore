@@ -22,3 +22,30 @@ __pycache__/
 # Temporary
 *.tmp
 *.log
+.hermes-tmp*
+
+# System scripts (PC tools - separate from skills)
+*.ps1
+*.bat
+
+# But keep skill scripts tracked
+!skills/force-delete/*.ps1
+
+# Test artifacts
+*.xlsx
+*.png
+*.html
+test-sample/
+
+# Playwright logs
+.playwright-mcp/
+
+# Knowledge base (generated)
+skills/self-learning/knowledge_base.json
+
+# Test weights
+skills/self-learning/test_weights.json
+
+# Temp dirs
+# Temp dirs in workspace (not a valid git pattern, use glob instead)
+.hermes-tmp*/
