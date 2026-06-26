@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "layout": "stretch",
+  "snapshot": true,
+  "share": "disabled",
+  "autoupdate": "notify",
+  "skills": {
+    "paths": ["skills"]
+  }
+}
