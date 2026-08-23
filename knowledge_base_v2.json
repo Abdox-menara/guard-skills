@@ -603,6 +603,17 @@
         "Old guard-skills.git has cursed loose dirs - safe to delete later"
       ],
       "outcome": "Library fully version-controlled: fdb56c1 + 9c41da9"
+    },
+    {
+      "date": "2026-08-23",
+      "name": "Deep Validation + Hardening",
+      "findings": [
+        "Force-delete method killed last 3 locked stubs",
+        "Validator: 4 skills lacked YAML frontmatter -> added; 35 dead links -> 32 stubs generated",
+        "git bundle backup to H:/Backups/guard-skills-2026-08-23.bundle (verified OK, 426KB)",
+        "core.autocrlf=true, gc.auto=50 set"
+      ],
+      "outcome": "Library validated 224/224 compliant + offsite bundle"
     }
   ],
   "learnings": [
@@ -978,12 +989,12 @@
     }
   },
   "performance_metrics": {
-    "total_actions": 48,
-    "successful_actions": 45,
+    "total_actions": 53,
+    "successful_actions": 50,
     "failed_actions": 3,
     "success_rate": 0.94,
     "patterns_learned": 24,
     "learnings_applied": 17,
-    "sessions_tracked": 13
+    "sessions_tracked": 14
   }
 }
