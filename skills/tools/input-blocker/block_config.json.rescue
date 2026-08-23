@@ -1,0 +1,30 @@
+{
+  "version": "3.0",
+  "countdown": 10,
+  "unblock_hotkey": "ctrl+shift+b",
+  "password": "",
+  "require_password": false,
+  "sound_enabled": true,
+  "voice_enabled": false,
+  "overlay_enabled": true,
+  "overlay_duration": 3,
+  "mouse_only": false,
+  "keyboard_only": false,
+  "block_log_enabled": true,
+  "language": "en",
+  "idle_enabled": false,
+  "idle_minutes": 5,
+  "schedule_enabled": false,
+  "schedule_time": "22:00",
+  "timer_enabled": false,
+  "timer_minutes": 0,
+  "repeat_enabled": false,
+  "repeat_time": "22:00",
+  "startup_enabled": false,
+  "presets": {
+    "quick": {"countdown": 3, "label": "Quick (3s)"},
+    "afk": {"countdown": 10, "label": "AFK (10s)"},
+    "sleep": {"countdown": 30, "label": "Sleep (30s)"},
+    "long": {"countdown": 60, "label": "Long (60s)"}
+  }
+}

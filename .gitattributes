@@ -1,0 +1,20 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Python source
+*.py text eol=crlf
+
+# Markdown
+*.md text eol=crlf
+
+# JSON
+*.json text eol=crlf
+
+# Scripts
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.ico binary

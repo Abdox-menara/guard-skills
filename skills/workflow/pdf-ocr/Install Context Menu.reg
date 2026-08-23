@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.pdf\shell\ExtractPDFText]
+@="Create Searchable PDF (OCR)"
+"Icon"="\"C:\\Users\\Abdox\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\.pdf\shell\ExtractPDFText\command]
+@="\"C:\\Users\\Abdox\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe\" \"C:\\Users\\Abdox\\Desktop\\PDF OCR Tool\\pdf-ocr.py\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.png\shell\ExtractPDFText]
+@="OCR to Searchable PDF"
+"Icon"="\"C:\\Users\\Abdox\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\.png\shell\ExtractPDFText\command]
+@="\"C:\\Users\\Abdox\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe\" \"C:\\Users\\Abdox\\Desktop\\PDF OCR Tool\\pdf-ocr.py\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.jpg\shell\ExtractPDFText]
+@="OCR to Searchable PDF"
+"Icon"="\"C:\\Users\\Abdox\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\.jpg\shell\ExtractPDFText\command]
+@="\"C:\\Users\\Abdox\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe\" \"C:\\Users\\Abdox\\Desktop\\PDF OCR Tool\\pdf-ocr.py\" \"%1\""

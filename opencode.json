@@ -1,10 +1,179 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "layout": "stretch",
-  "snapshot": true,
-  "share": "disabled",
+  "model": "opencode/deepseek-v4-flash-free",
+  "small_model": "opencode/nemotron-3-ultra-free",
+  "default_agent": "build",
+  "username": "Abdox",
+  "logLevel": "INFO",
   "autoupdate": "notify",
+  "snapshot": true,
+  "share": "manual",
+  "layout": "stretch",
+  "instructions": ["AGENTS.md", "../.opencode/TASK_GUIDE.md", "../.opencode/memory/shared-abdox.md"],
+  "tool_output": {
+    "max_lines": 2000,
+    "max_bytes": 51200
+  },
+  "compaction": {
+    "auto": true,
+    "prune": true,
+    "reserved": 12000,
+    "tail_turns": 15
+  },
+  "lsp": true,
+  "formatter": true,
+  "watcher": {
+    "ignore": ["node_modules/**", "dist/**", "build/**", ".git/**", "__pycache__/**"]
+  },
+  "attachment": {
+    "image": {
+      "auto_resize": true,
+      "max_width": 2000,
+      "max_height": 2000
+    }
+  },
   "skills": {
     "paths": ["skills"]
+  },
+  "permission": {
+    "edit": "allow",
+    "bash": {
+      "*": "allow",
+      "rm -rf /*": "deny",
+      "rm -fr /*": "deny",
+      "rm -Rf /*": "deny",
+      "rm --recursive --force /*": "deny",
+      "rm -rf ~*": "deny",
+      "rm -rf $HOME*": "deny",
+      "rm -rf C:*": "deny",
+      "rm -rf /c/*": "deny",
+      "rm -rf /mnt/c/*": "deny",
+      "sudo rm *": "deny",
+      "rd /s*": "deny",
+      "rmdir /s*": "deny",
+      "del /f /s*": "deny",
+      "del /s /q C:*": "deny",
+      "Remove-Item *-Recurse*-Force*": "deny",
+      "Remove-Item *-Force*-Recurse*": "deny",
+      "ri *-Recurse*-Force*": "deny",
+      "rm *-Recurse*-Force*": "deny",
+      "Get-ChildItem *|*Remove-Item*": "deny",
+      "format *": "deny",
+      "Format-Volume*": "deny",
+      "diskpart*": "deny",
+      "Clear-Disk*": "deny",
+      "Initialize-Disk*": "deny",
+      "cipher /w*": "deny",
+      "mkfs*": "deny",
+      "dd if=*of=/dev/*": "deny",
+      "git push --force*": "deny",
+      "git push -f*": "deny",
+      "git reset --hard*": "ask",
+      "git clean -*d*f*": "ask",
+      "npm publish*": "ask",
+      "curl *|*sh*": "deny",
+      "curl *|*bash*": "deny",
+      "wget *|*sh*": "deny",
+      "wget *|*bash*": "deny",
+      "iwr *|*iex*": "deny",
+      "Invoke-WebRequest *|*Invoke-Expression*": "deny",
+      "iex *": "deny",
+      "* .env": "deny",
+      "* .env.*": "deny",
+      "* .env.example*": "allow",
+      "* .env.sample*": "allow",
+      "* .env.template*": "allow",
+      "*.ssh/id_*": "deny"
+    },
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow",
+      "*.env.sample": "allow",
+      "*.env.template": "allow",
+      "*id_rsa*": "deny",
+      "*id_ed25519*": "deny",
+      "*.pem": "deny",
+      "*.ppk": "deny",
+      "*credentials.json": "deny"
+    },
+    "grep": "allow",
+    "glob": "allow",
+    "list": "allow",
+    "websearch": "allow",
+    "webfetch": "allow",
+    "task": "allow",
+    "skill": "allow",
+    "todowrite": "allow",
+    "question": "allow",
+    "external_directory": {
+      "*": "ask",
+      "C:/opencodes/**": "allow",
+      "C:/cursor/**": "allow",
+      "~/.config/opencode/**": "allow",
+      "~/Downloads/**": "allow",
+      "~/Documents/**": "allow",
+      "C:/Windows/**": "deny",
+      "C:/Program Files/**": "deny",
+      "C:/Program Files (x86)/**": "deny"
+    }
+  },
+  "mcp": {
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp"],
+      "enabled": true,
+      "environment": {
+        "BROWSER": "C:\\Users\\Abdox\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      }
+    },
+    "ghost": {
+      "type": "local",
+      "command": [
+        "C:\\Users\\Abdox\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts\\windows-mcp.EXE",
+        "serve",
+        "--transport",
+        "stdio",
+        "--config",
+        "C:\\Users\\Abdox\\.ghost\\mcp-config.toml"
+      ],
+      "enabled": true,
+      "environment": { "ANONYMIZED_TELEMETRY": "false" }
+    }
+  },
+  "provider": {
+    "openrouter": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "OpenRouter (Free Models)",
+      "options": {
+        "baseURL": "https://openrouter.ai/api/v1",
+        "apiKey": "{env:OPENROUTER_API_KEY}",
+        "timeout": 600000,
+        "chunkTimeout": 90000
+      },
+      "models": {
+        "openai/gpt-oss-120b:free": {
+          "name": "GPT-OSS 120B Free (coding, reasoning)",
+          "limit": { "context": 131072, "output": 32000 }
+        },
+        "nvidia/nemotron-nano-12b-v2-vl:free": {
+          "name": "Nemotron Nano VL (Free Vision)",
+          "modalities": { "input": ["text", "image"], "output": ["text"] }
+        },
+        "google/gemini-2.0-flash-exp:free": {
+          "name": "Gemini 2.0 Flash (Free Vision)",
+          "modalities": { "input": ["text", "image"], "output": ["text"] }
+        },
+        "meta-llama/llama-3.2-11b-vision-instruct:free": {
+          "name": "Llama 3.2 11B Vision (Free)",
+          "modalities": { "input": ["text", "image"], "output": ["text"] }
+        },
+        "qwen/qwen-2-vl-7b-instruct:free": {
+          "name": "Qwen 2 VL 7B (Free Vision)",
+          "modalities": { "input": ["text", "image"], "output": ["text"] }
+        }
+      }
+    }
   }
 }

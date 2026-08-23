@@ -1,0 +1,37 @@
+{
+  "learnings": [
+    "Desktop control MCP provides comprehensive Windows PC automation",
+    "pyautogui is the core library for mouse and keyboard automation",
+    "pygetwindow handles window management operations",
+    "pyperclip provides clipboard operations",
+    "PIL/Pillow handles image processing and screenshots",
+    "psutil provides system information and process management",
+    "mss provides fast screenshot capabilities",
+    "pytesseract enables OCR functionality",
+    "Safety mechanisms include fail-safe, automatic recovery, and retry logic",
+    "Performance optimizations include caching and batch operations"
+  ],
+  "configurations": {
+    "fail_safe": true,
+    "mouse_pause": 0.05,
+    "cache_ttl": 60,
+    "max_retries": 3,
+    "timeout": 30
+  },
+  "best_practices": [
+    "Always use fail-safe mechanism",
+    "Verify critical operations with screenshots",
+    "Use clipboard for text operations",
+    "Cache frequently used values",
+    "Handle errors gracefully",
+    "Use appropriate timeouts",
+    "Test in safe environment first"
+  ],
+  "troubleshooting": [
+    "Check if dependencies are installed",
+    "Verify window titles match correctly",
+    "Ensure processes exist before killing",
+    "Check network connectivity for network operations",
+    "Verify registry paths are correct"
+  ]
+}
