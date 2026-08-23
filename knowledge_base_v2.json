@@ -626,6 +626,19 @@
         "chkdsk C: /F /X scheduled at next reboot (verified via elevated chkntfs)"
       ],
       "outcome": "Offsite backup live on GitHub, corruption fix queued for reboot"
+    },
+    {
+      "date": "2026-08-23",
+      "name": "MORE: Automation + Truth Sync",
+      "findings": [
+        "TRUE skill count = 225 (72+83+67+3 special) - old 226 counted empty meta-skill-generator dir",
+        "tools/build_index.py auto-generates AGENTS.md index + skills_index.json - drift impossible now",
+        "Fixed skill-generator-tool (had no SKILL.md); meta-skill-generator was empty dir",
+        "Script validation: all PS1 OK under pwsh7 (5.1 false alarms), only gen2.py broken -> 4 scratch generators retired",
+        "scripts/maintain.ps1 + weekly task GuardSkills-Maintenance (Sun 20:00): index+commit+push+bundle",
+        "README refreshed: real counts, Abdox-menara repo name, mojibake fixed"
+      ],
+      "outcome": "Self-maintaining library: 225 verified, weekly automation live"
     }
   ],
   "learnings": [
@@ -1001,12 +1014,12 @@
     }
   },
   "performance_metrics": {
-    "total_actions": 57,
-    "successful_actions": 54,
+    "total_actions": 65,
+    "successful_actions": 62,
     "failed_actions": 3,
     "success_rate": 0.95,
     "patterns_learned": 24,
     "learnings_applied": 17,
-    "sessions_tracked": 15
+    "sessions_tracked": 16
   }
 }
