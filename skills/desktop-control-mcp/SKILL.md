@@ -1,3 +1,8 @@
+---
+name: desktop-control-mcp
+description: Enhanced Desktop Control MCP Server for advanced Windows PC control with AI/ML integration, enterprise security, and intelligent automation.
+---
+
 # Desktop Control MCP Skill
 
 ## Overview

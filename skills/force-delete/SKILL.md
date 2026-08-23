@@ -1,3 +1,8 @@
+---
+name: force-delete
+description: Automates the removal of protected directories that throw **"Access is denied"** by: - Taking ownership (`takeown /A`) - Granting Administrators full control (`icacls /grant`) - Clearing restrictive attributes (`attrib`) - Deleting recursively (`Remove-Item -Recurse -Force`)
+---
+
 # Force‑Delete & Disk‑Cleanup Skill
 
 ## Description

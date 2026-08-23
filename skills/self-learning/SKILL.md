@@ -1,3 +1,8 @@
+---
+name: self-learning
+description: # Self-Learning Engine - ULTRA-ADVANCED v5.0
+---
+
 # Skill: self-learning
 
 # Self-Learning Engine - ULTRA-ADVANCED v5.0

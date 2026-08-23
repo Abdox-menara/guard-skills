@@ -1,3 +1,8 @@
+---
+name: input-blocker
+description: Block keyboard and mouse input on Windows until manually unblocked.
+---
+
 # Input Blocker v3.0
 
 Block keyboard and mouse input on Windows until manually unblocked.
