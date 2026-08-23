@@ -1,0 +1,989 @@
+{
+  "version": "2.0",
+  "created": "2026-06-30",
+  "last_updated": "2026-08-23",
+  "project": {
+    "name": "Guard Skills",
+    "location": "C:/opencodes/guard skills",
+    "type": "skills_repository",
+    "total_skills": 223,
+    "skills_by_category": {
+      "guards": 72,
+      "tools": 83,
+      "workflow": 68
+    }
+  },
+  "patterns": [
+    {
+      "id": "p001",
+      "pattern": "user_direct_concise",
+      "description": "User asks direct questions, expects concise answers",
+      "confidence": 0.95,
+      "occurrences": 15,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-07-05"
+    },
+    {
+      "id": "p002",
+      "pattern": "action_over_explanation",
+      "description": "User prefers action over explanation",
+      "confidence": 0.9,
+      "occurrences": 12,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-07-05"
+    },
+    {
+      "id": "p003",
+      "pattern": "iterative_improvement",
+      "description": "User wants iterative improvement cycles",
+      "confidence": 0.85,
+      "occurrences": 13,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-07-05"
+    },
+    {
+      "id": "p004",
+      "pattern": "brave_browser",
+      "description": "User uses Brave browser, not Chrome",
+      "confidence": 0.95,
+      "occurrences": 5,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-07-01"
+    },
+    {
+      "id": "p005",
+      "pattern": "desktop_mcp_automation",
+      "description": "User uses Ghost desktop MCP for browser automation",
+      "confidence": 0.9,
+      "occurrences": 8,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-07-01"
+    },
+    {
+      "id": "p006",
+      "pattern": "bash_workaround",
+      "description": "write/edit tools have $ bug — use bash commands instead",
+      "confidence": 0.95,
+      "occurrences": 10,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-07-05"
+    },
+    {
+      "id": "p007",
+      "pattern": "finish_before_new",
+      "description": "Always finish current task before answering new questions",
+      "confidence": 0.9,
+      "occurrences": 6,
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01"
+    },
+    {
+      "id": "p008",
+      "pattern": "thorough_verification",
+      "description": "Verify everything thoroughly before completing — recheck 10 times",
+      "confidence": 0.85,
+      "occurrences": 4,
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01"
+    },
+    {
+      "id": "p009",
+      "pattern": "deep_analysis_recheck",
+      "description": "Recheck with deep analysis, not surface-level",
+      "confidence": 0.8,
+      "occurrences": 3,
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01"
+    },
+    {
+      "id": "p010",
+      "pattern": "plc_xml_editing",
+      "description": "PLC programs are XML — edit tags, not ladder logic directly",
+      "confidence": 0.9,
+      "occurrences": 2,
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01"
+    },
+    {
+      "id": "p011",
+      "pattern": "pdf_generation_workflow",
+      "description": "PDF generation uses fpdf2, push to GitHub via gh release",
+      "confidence": 0.85,
+      "occurrences": 2,
+      "first_seen": "2026-07-04",
+      "last_seen": "2026-07-04"
+    },
+    {
+      "id": "p012",
+      "pattern": "onedrive_sharepoint",
+      "description": "OneDrive files from OFPPT SharePoint — save to Desktop/API SFO",
+      "confidence": 0.8,
+      "occurrences": 3,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30"
+    },
+    {
+      "id": "p013",
+      "pattern": "system_report_powershell",
+      "description": "System reports use PowerShell cmdlets for data gathering",
+      "confidence": 0.85,
+      "occurrences": 2,
+      "first_seen": "2026-07-04",
+      "last_seen": "2026-07-04"
+    },
+    {
+      "id": "p014",
+      "pattern": "memory_persistence",
+      "description": "User expects memory to persist across sessions via AGENTS.md",
+      "confidence": 0.95,
+      "occurrences": 5,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-07-05"
+    },
+    {
+      "id": "p015",
+      "pattern": "skill_loading",
+      "description": "Load relevant skills (handoff, self-learning) before starting work",
+      "confidence": 0.9,
+      "occurrences": 4,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-07-05"
+    },
+    {
+      "id": "p016",
+      "pattern": "agent_first_architecture",
+      "description": "Vercel Labs validates agent-first design — 38.3k stars on agent-browser, skills as first-class citizens",
+      "confidence": 0.9,
+      "occurrences": 1,
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-07-11"
+    },
+    {
+      "id": "p017",
+      "pattern": "workflow_devkit_patterns",
+      "description": "Enterprise integration patterns: approval chains, circuit breaker, event sourcing, dead letter queue",
+      "confidence": 0.85,
+      "occurrences": 1,
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-07-11"
+    },
+    {
+      "id": "p018",
+      "pattern": "security_first_agents",
+      "description": "deepsec (5.2k stars) — security harness for coding agents, validates our guard approach",
+      "confidence": 0.85,
+      "occurrences": 1,
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-07-11"
+    },
+    {
+      "id": "p019",
+      "pattern": "generative_ui",
+      "description": "json-render (15.7k stars) — dynamic interfaces from structured data, applicable to Ghost MCP",
+      "confidence": 0.8,
+      "occurrences": 1,
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-07-11"
+    },
+    {
+      "id": "p020",
+      "pattern": "browser_automation_priority",
+      "description": "agent-browser (38.3k stars) is top Vercel repo — browser automation is critical for agents",
+      "confidence": 0.9,
+      "occurrences": 1,
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-07-11"
+    },
+    {
+      "id": "p021",
+      "pattern": "ghost_snapshot_dpi",
+      "description": "Ghost Snapshot requires DPI-aware coords (1.333x) + UIA-first click, win32 GDI fallback",
+      "confidence": 0.92,
+      "occurrences": 17,
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13"
+    },
+    {
+      "id": "p022",
+      "pattern": "terabox_browser_upload",
+      "description": "TeraBox integration via browser hidden input + API quota checks, 171MB zip upload",
+      "confidence": 0.88,
+      "occurrences": 3,
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15"
+    },
+    {
+      "id": "p023",
+      "pattern": "ntfs_locked_workaround",
+      "description": "NTFS-locked dirs need icacls /reset + --separate-git-dir workaround, chkdsk /f for permanent",
+      "confidence": 0.9,
+      "occurrences": 5,
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28"
+    },
+    {
+      "id": "p024",
+      "pattern": "autodesk_purge",
+      "description": "Autodesk removal requires MsiExec /x + registry + service + folder purge, 15+ products",
+      "confidence": 0.95,
+      "occurrences": 2,
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07"
+    }
+  ],
+  "skills_index": {
+    "guards": [
+      "analytics-guard",
+      "api-contract-guard",
+      "api-security-guard",
+      "async-guard",
+      "build-guard",
+      "changelog-guard",
+      "ci-guard",
+      "circuit-breaker-guard",
+      "clean-arch-guard",
+      "clean-code-guard",
+      "comment-guard",
+      "commit-guard",
+      "concurrency-guard",
+      "config-guard",
+      "cors-guard",
+      "cqrs-guard",
+      "csrf-guard",
+      "css-guard",
+      "cyclomatic-guard",
+      "ddd-guard",
+      "dead-code-guard",
+      "dependency-injection-guard",
+      "deploy-guard",
+      "docker-compose-guard",
+      "docker-guard",
+      "docs-guard",
+      "duplicate-code-guard",
+      "encryption-guard",
+      "env-check-guard",
+      "error-handling-guard",
+      "event-driven-guard",
+      "event-sourcing-guard",
+      "file-guard",
+      "graceful-shutdown-guard",
+      "health-check-guard",
+      "helm-guard",
+      "hexagonal-guard",
+      "html-guard",
+      "iam-guard",
+      "idor-guard",
+      "injection-guard",
+      "json-guard",
+      "jwt-guard",
+      "kubernetes-guard",
+      "large-class-guard",
+      "logging-pattern-guard",
+      "long-method-guard",
+      "lsp-guard",
+      "markdown-guard",
+      "message-queue-guard",
+      "migration-pattern-guard",
+      "naming-guard",
+      "nested-depth-guard",
+      "observer-pattern-guard",
+      "pr-guard",
+      "python-guard",
+      "react-guard",
+      "readme-guard",
+      "repository-pattern-guard",
+      "responsive-guard",
+      "retry-guard",
+      "saga-guard",
+      "seo-guard",
+      "serialization-guard",
+      "ssrf-guard",
+      "state-guard",
+      "strategy-pattern-guard",
+      "terraform-guard",
+      "test-guard",
+      "typescript-guard",
+      "xss-guard",
+      "yaml-guard"
+    ],
+    "tools": [
+      "accessibility-patterns",
+      "alerting-stack",
+      "analytics",
+      "analytics-setup",
+      "api-documentation",
+      "api-rate-limiting",
+      "api-versioning",
+      "audio-processing",
+      "backup-strategy",
+      "batch-processing",
+      "cache-strategy",
+      "capacity-management",
+      "cdn",
+      "cdn-strategy",
+      "cicd-pipeline",
+      "component-library",
+      "computer-vision",
+      "container-patterns",
+      "content-strategy",
+      "contract-testing",
+      "data-management",
+      "data-quality",
+      "data-warehouse",
+      "database-optimization",
+      "database-scaling",
+      "design-system",
+      "ecommerce",
+      "email-systems",
+      "error-boundary-patterns",
+      "etl",
+      "feature-flag-strategy",
+      "freebuff-bridge",
+      "full-text-search",
+      "graph-database",
+      "grpc",
+      "image-optimization",
+      "image-processing",
+      "incident-management",
+      "index-design",
+      "information-architecture",
+      "input-blocker",
+      "logging-patterns",
+      "logging-stack",
+      "makefile",
+      "mfa",
+      "microservice-patterns",
+      "monitoring-stack",
+      "nlp",
+      "nosql",
+      "notification",
+      "oauth",
+      "payment",
+      "performance-monitoring",
+      "performance-optimization",
+      "protocol-buffers",
+      "pwa",
+      "query-optimization",
+      "rbac",
+      "real-time",
+      "responsive-design",
+      "rest-api",
+      "scrcpy-install",
+      "search-engine",
+      "seo",
+      "seo-optimization",
+      "serverless-patterns",
+      "service-mesh",
+      "shell-scripting",
+      "skill-generator-tool",
+      "sso",
+      "state-management",
+      "static-sites",
+      "streaming",
+      "terabox-integration",
+      "testing-pyramid",
+      "time-series",
+      "tracing-stack",
+      "vector-database",
+      "video-processing",
+      "webhooks",
+      "websockets",
+      "windows-shortcut-repair",
+      "zero-downtime-deployment",
+      "force-delete",
+      "self-learning",
+      "desktop-control-mcp"
+    ],
+    "workflow": [
+      "a-b-testing",
+      "acceptance-testing",
+      "api-design",
+      "api-design-workflow",
+      "architecture-decision-record",
+      "atdd",
+      "backlog-grooming",
+      "bdd-workflow",
+      "changelog",
+      "chaos-engineering",
+      "chaos-engineering-workflow",
+      "code-migration",
+      "code-review-workflow",
+      "compliance",
+      "continuous-improvement",
+      "cost-optimization",
+      "data-migration",
+      "data-pipeline-workflow",
+      "database-design",
+      "database-design-workflow",
+      "database-migration-workflow",
+      "decision-log",
+      "definition-of-done",
+      "dependency-update",
+      "diagnose",
+      "disaster-recovery",
+      "documentation-as-code",
+      "estimation",
+      "event-storming",
+      "example-mapping",
+      "exploratory-testing",
+      "feature-flags",
+      "grill-me",
+      "handoff",
+      "impact-mapping",
+      "incident-postmortem",
+      "incident-response-workflow",
+      "load-testing",
+      "localization",
+      "meta-skill-generator",
+      "ml-pipeline-workflow",
+      "pair-programming",
+      "pdf-ocr",
+      "performance-audit",
+      "performance-budget",
+      "performance-testing-workflow",
+      "refactoring-workflow",
+      "release-notes",
+      "requirements-gathering",
+      "retrospective",
+      "runbook",
+      "secrets-management",
+      "secrets-rotation-workflow",
+      "security-review",
+      "security-testing-workflow",
+      "semantic-versioning",
+      "specification-by-example",
+      "sprint-planning",
+      "story-splitting",
+      "tdd",
+      "technical-debt",
+      "technical-specification",
+      "terabox-improvement",
+      "usability-testing",
+      "user-research",
+      "user-story-mapping",
+      "value-stream-mapping",
+      "zoom-out"
+    ]
+  },
+  "session_history": [
+    {
+      "session_id": "s001",
+      "date": "2026-06-30",
+      "tasks": [
+        "memory_system_setup",
+        "improvement_cycles"
+      ],
+      "outcome": "success",
+      "details": "Set up 3-layer memory system, ran 13 improvement cycles"
+    },
+    {
+      "session_id": "s002",
+      "date": "2026-06-30",
+      "tasks": [
+        "onedrive_download",
+        "bulk_zip_download"
+      ],
+      "outcome": "partial",
+      "details": "Downloaded 8 folders, bulk zip corrupt, partial valid zips obtained"
+    },
+    {
+      "session_id": "s003",
+      "date": "2026-07-01",
+      "tasks": [
+        "plc_program_fix",
+        "sdi_program_smbp"
+      ],
+      "outcome": "success",
+      "details": "Fixed Schneider SoMachine PLC program, 2 manual fixes + 10 already correct"
+    },
+    {
+      "session_id": "s004",
+      "date": "2026-07-04",
+      "tasks": [
+        "pdf_report_generation",
+        "github_push"
+      ],
+      "outcome": "success",
+      "details": "Created PDF system report, pushed to GitHub Abdox-menara/opencode-reports"
+    },
+    {
+      "session_id": "s005",
+      "date": "2026-07-05",
+      "tasks": [
+        "memory_system_improvement"
+      ],
+      "outcome": "success",
+      "details": "Rewrote all 3 memory files, expanded skill index to 215+"
+    },
+    {
+      "session_id": "s006",
+      "date": "2026-07-11",
+      "tasks": [
+        "vercel_labs_research",
+        "knowledge_integration"
+      ],
+      "outcome": "success",
+      "details": "Analyzed 318 Vercel Labs repos, integrated architectural patterns into AGENTS.md and knowledge_base_v2.json"
+    },
+    {
+      "session_id": "s007",
+      "date": "2026-07-07",
+      "tasks": [
+        "autodesk_removal",
+        "windows_installer_fix"
+      ],
+      "outcome": "success",
+      "details": "Removed all Autodesk products (AutoCAD 2024/2025/2026, Inventor 2027, etc.), MsiExec + registry + service purge, no reboot"
+    },
+    {
+      "session_id": "s008",
+      "date": "2026-07-13",
+      "tasks": [
+        "ghost_snapshot_v2",
+        "dpi_fix",
+        "uia_integration"
+      ],
+      "outcome": "success",
+      "details": "Built ghost_snapshot.py v2.0 with 17 commands, fixed 1.333x DPI drift, UIA-first click, all 17 verified"
+    },
+    {
+      "session_id": "s009",
+      "date": "2026-07-15",
+      "tasks": [
+        "terabox_integration",
+        "cloud_upload"
+      ],
+      "outcome": "success",
+      "details": "Uploaded guard-skills.zip 171MB to TeraBox, created terabox-integration + terabox-improvement skills"
+    },
+    {
+      "session_id": "s010",
+      "date": "2026-07-28",
+      "tasks": [
+        "ecosystem_cleanup",
+        "config_fixes",
+        "ts_migration",
+        "git_repair"
+      ],
+      "outcome": "success",
+      "details": "400 items/75MB cleaned, 5 config fixes, TS 5.7->7.0.2, git repair with --separate-git-dir, 0 vulnerabilities"
+    },
+    {
+      "session_id": "s011",
+      "date": "2026-08-22",
+      "tasks": [
+        "memory_sync",
+        "skill_reverification",
+        "encoding_fix"
+      ],
+      "outcome": "success",
+      "details": "Synced 223 skills (72+83+68), fixed PC specs, added missing sessions, fixed shared-abdox encoding"
+    },
+    {
+      "date": "2026-08-23",
+      "name": "Improvement Cycle",
+      "findings": [
+        "180 stale .pyc in self-learning/__pycache__ deleted (27MB)",
+        "3 junk root scripts deleted",
+        "NTFS-locked files fixed via force-delete method (icacls grant + File.Delete)",
+        "Git tracks only 13 of ~500 skill files - full commit recommended",
+        "Skills index updated: force-delete, self-learning, desktop-control-mcp added"
+      ],
+      "outcome": "Memory synced to 226 skills"
+    },
+    {
+      "date": "2026-08-23",
+      "name": "Full Library Commit + Git DB Repair",
+      "findings": [
+        "git tracked only 13/500 skill files (.gitignore blocked *.ps1/*.bat + guards/workflow SKILL.md)",
+        "Removed ignore patterns, committed full library: 333 files, 224/224 SKILL.md tracked",
+        "C:\\opencodes volume: CREATE works, DELETE/RENAME blocked - broke git object writes (tmp_obj rename fails)",
+        "Fix: repack -a -d -> fresh clean gitdir (guard-skills-clean.git) -> .git pointer file rewritten via Set-Content -Force (delete-blocked but overwrite works)",
+        "idm/ excluded to own-repo candidate (416MB, corrupt http.rs)",
+        "Old guard-skills.git has cursed loose dirs - safe to delete later"
+      ],
+      "outcome": "Library fully version-controlled: fdb56c1 + 9c41da9"
+    }
+  ],
+  "learnings": [
+    {
+      "id": "l001",
+      "topic": "memory_system",
+      "insight": "Three-layer memory (AGENTS.md, HANDOFF.md, JSON) works well for continuity",
+      "applied": true,
+      "confidence": 0.95,
+      "source": "Session 2026-06-30"
+    },
+    {
+      "id": "l002",
+      "topic": "plc_editing",
+      "insight": "PLC programs (.smbp) are XML — edit tag attributes, not ladder logic text directly",
+      "applied": true,
+      "confidence": 0.9,
+      "source": "Session 2026-07-01"
+    },
+    {
+      "id": "l003",
+      "topic": "workaround_strategy",
+      "insight": "When write/edit tools fail with $ bug, use bash commands (Out-File, Set-Content, Add-Content)",
+      "applied": true,
+      "confidence": 0.95,
+      "source": "Session 2026-06-30"
+    },
+    {
+      "id": "l004",
+      "topic": "verification_depth",
+      "insight": "User requires thorough verification — recheck 10 times with deep analysis before marking complete",
+      "applied": true,
+      "confidence": 0.85,
+      "source": "Session 2026-07-01"
+    },
+    {
+      "id": "l005",
+      "topic": "pdf_workflow",
+      "insight": "PDF generation: fpdf2 library → python script → gh release create for GitHub push",
+      "applied": true,
+      "confidence": 0.85,
+      "source": "Session 2026-07-04"
+    },
+    {
+      "id": "l006",
+      "topic": "onedrive_limits",
+      "insight": "Bulk zip downloads from SharePoint may be corrupt — download folders individually instead",
+      "applied": false,
+      "confidence": 0.8,
+      "source": "Session 2026-06-30"
+    },
+    {
+      "id": "l007",
+      "topic": "skill_loading",
+      "insight": "Load handoff + self-learning skills before starting memory-related tasks",
+      "applied": true,
+      "confidence": 0.9,
+      "source": "Session 2026-06-30"
+    },
+    {
+      "id": "l008",
+      "topic": "task_completion_order",
+      "insight": "Always finish current task completely before addressing new questions from user",
+      "applied": true,
+      "confidence": 0.9,
+      "source": "Session 2026-07-01"
+    },
+    {
+      "id": "l009",
+      "topic": "pc_hardware_limits",
+      "insight": "PC has 36GB RAM — cannot run GLM 5.2 (needs 241GB+), stick to lighter models",
+      "applied": true,
+      "confidence": 0.95,
+      "source": "Session 2026-06-30"
+    },
+    {
+      "id": "l010",
+      "topic": "memory_file_structure",
+      "insight": "AGENTS.md = human-readable memory, HANDOFF.md = session transfer, knowledge_base_v2.json = machine data",
+      "applied": true,
+      "confidence": 0.95,
+      "source": "Session 2026-07-05"
+    },
+    {
+      "id": "l011",
+      "topic": "vercel_agent_patterns",
+      "insight": "Vercel Labs 318 repos validate: agent-browser (38.3k stars) = top pattern, skills (25.8k) = first-class citizens, agent-skills (28.9k) = skill collections",
+      "applied": true,
+      "confidence": 0.9,
+      "source": "Session 2026-07-11"
+    },
+    {
+      "id": "l012",
+      "topic": "workflow_integration_patterns",
+      "insight": "60+ workflow-* repos from Vercel show enterprise patterns: approval chains, circuit breaker, dead letter queue, event sourcing, map-reduce",
+      "applied": false,
+      "confidence": 0.85,
+      "source": "Session 2026-07-11"
+    },
+    {
+      "id": "l013",
+      "topic": "security_first_development",
+      "insight": "deepsec (5.2k stars) = security-first agent development, validates our guard skills approach",
+      "applied": true,
+      "confidence": 0.85,
+      "source": "Session 2026-07-11"
+    },
+    {
+      "id": "l014",
+      "topic": "generative_ui_concept",
+      "insight": "json-render (15.7k stars) = dynamic UI from structured data, applicable to Ghost MCP output formatting",
+      "applied": false,
+      "confidence": 0.8,
+      "source": "Session 2026-07-11"
+    },
+    {
+      "id": "l015",
+      "topic": "edge_computing_direction",
+      "insight": "portless (10.1k stars) + vercel-openclaw = edge-first computing, Cloudflare Workers integration path",
+      "applied": false,
+      "confidence": 0.8,
+      "source": "Session 2026-07-11"
+    },
+    {
+      "id": "l016",
+      "topic": "ghost_snapshot_v2",
+      "insight": "Ghost Snapshot v2.0: 17 commands, DPI scale 1.333x drift must be corrected via --from-image, UIA-first then visual fallback",
+      "applied": true,
+      "confidence": 0.92,
+      "source": "Session 2026-07-13"
+    },
+    {
+      "id": "l017",
+      "topic": "terabox_workflow",
+      "insight": "TeraBox browser automation: hidden file input + API quota check, zip 171MB guard-skills, improvement workflow for optimization",
+      "applied": true,
+      "confidence": 0.88,
+      "source": "Session 2026-07-15"
+    },
+    {
+      "id": "l018",
+      "topic": "ecosystem_cleanup",
+      "insight": "Massive cleanup: 400 items/75MB, TS 7 migration requires node: prefix + types node, git --separate-git-dir for NTFS-locked",
+      "applied": true,
+      "confidence": 0.9,
+      "source": "Session 2026-07-28"
+    },
+    {
+      "id": "l019",
+      "topic": "memory_sync",
+      "insight": "Memory drift detection: filesystem re-verification via Get-ChildItem Measure-Object, skill tables auto-generated from SKILL.md frontmatter",
+      "applied": true,
+      "confidence": 0.95,
+      "source": "Session 2026-08-22"
+    },
+    {
+      "id": "l020",
+      "text": "NTFS-locked files on C:\\opencodes: fix with icacls /grant:r user:F /T then .NET File.Delete; Remove-Item fails on NonInteractive prompts",
+      "confidence": 0.95
+    },
+    {
+      "id": "l021",
+      "text": "C:\\\\opencodes NTFS: file create/read OK but delete/rename denied. Git dies at tmp_obj rename. Fix: git repack -a -d, build fresh separate-git-dir from pack+refs+config, rewrite .git pointer with Set-Content -Force. Never rely on unlink; use overwrite-in-place.",
+      "confidence": 0.97
+    }
+  ],
+  "mistakes": [],
+  "successes": [
+    {
+      "id": "sc001",
+      "action": "memory_system_setup",
+      "context": "initial_session",
+      "result": "3-layer memory operational",
+      "success_score": 0.95,
+      "timestamp": "2026-06-30"
+    },
+    {
+      "id": "sc002",
+      "action": "plc_program_fix",
+      "context": "sdi_program_smbp",
+      "result": "2 manual fixes applied correctly",
+      "success_score": 0.9,
+      "timestamp": "2026-07-01"
+    },
+    {
+      "id": "sc003",
+      "action": "pdf_report_generation",
+      "context": "system_report",
+      "result": "PDF created and pushed to GitHub",
+      "success_score": 0.85,
+      "timestamp": "2026-07-04"
+    },
+    {
+      "id": "sc004",
+      "action": "memory_improvement",
+      "context": "memory_rewrite",
+      "result": "All 3 memory files rewritten with 215+ skills",
+      "success_score": 0.9,
+      "timestamp": "2026-07-05"
+    },
+    {
+      "id": "sc005",
+      "action": "autodesk_removal",
+      "context": "complete_purge",
+      "result": "All Autodesk products removed, registry/services/folders cleaned",
+      "success_score": 0.95,
+      "timestamp": "2026-07-07"
+    },
+    {
+      "id": "sc006",
+      "action": "ghost_snapshot_v2",
+      "context": "desktop_automation",
+      "result": "17 commands verified, DPI fixed",
+      "success_score": 0.92,
+      "timestamp": "2026-07-13"
+    },
+    {
+      "id": "sc007",
+      "action": "terabox_upload",
+      "context": "cloud_storage",
+      "result": "171MB zip uploaded, skills created",
+      "success_score": 0.88,
+      "timestamp": "2026-07-15"
+    },
+    {
+      "id": "sc008",
+      "action": "ecosystem_cleanup",
+      "context": "maintenance",
+      "result": "400 items cleaned, 0 vulnerabilities, TS7 migrated",
+      "success_score": 0.93,
+      "timestamp": "2026-07-28"
+    },
+    {
+      "id": "sc009",
+      "action": "memory_sync",
+      "context": "memory_improvement",
+      "result": "223 skills verified, drift fixed",
+      "success_score": 0.96,
+      "timestamp": "2026-08-22"
+    }
+  ],
+  "user_preferences": {
+    "language": "english",
+    "communication_style": "direct_concise",
+    "action_preference": "action_over_explanation",
+    "browser": "brave",
+    "desktop_mcp": "ghost",
+    "models": {
+      "daily": "opencode/deepseek-v4-flash-free",
+      "cheap": "opencode/nemotron-3-ultra-free",
+      "vision": "openrouter/nvidia/nemotron-nano-12b-v2-vl:free"
+    }
+  },
+  "knowledge_graph": {
+    "nodes": {
+      "guard_skills": {
+        "type": "project",
+        "attributes": {
+          "name": "Guard Skills",
+          "skills": 223
+        }
+      },
+      "plc_program": {
+        "type": "file",
+        "attributes": {
+          "name": "sdi program.smbp",
+          "type": "Schneider SoMachine XML"
+        }
+      },
+      "pdf_report": {
+        "type": "deliverable",
+        "attributes": {
+          "format": "PDF",
+          "destination": "GitHub"
+        }
+      },
+      "memory_system": {
+        "type": "system",
+        "attributes": {
+          "layers": 3,
+          "files": [
+            "AGENTS.md",
+            "HANDOFF.md",
+            "knowledge_base_v2.json"
+          ]
+        }
+      },
+      "user_abdox": {
+        "type": "user",
+        "attributes": {
+          "pc": "Dell",
+          "os": "Windows 11",
+          "ram": "32GB"
+        }
+      },
+      "ghost_snapshot": {
+        "type": "tool",
+        "attributes": {
+          "version": "v2.0",
+          "commands": 17,
+          "status": "verified"
+        }
+      },
+      "terabox": {
+        "type": "integration",
+        "attributes": {
+          "size_mb": 171,
+          "skills": [
+            "terabox-integration",
+            "terabox-improvement"
+          ]
+        }
+      },
+      "ecosystem_cleanup": {
+        "type": "maintenance",
+        "attributes": {
+          "items_cleaned": 400,
+          "mb_freed": 75,
+          "date": "2026-07-28"
+        }
+      },
+      "autodesk_removal": {
+        "type": "cleanup",
+        "attributes": {
+          "products": 15,
+          "date": "2026-07-07"
+        }
+      }
+    },
+    "edges": {
+      "guard_skills": [
+        {
+          "to": "memory_system",
+          "relationship": "managed_by",
+          "weight": 1.0
+        }
+      ],
+      "memory_system": [
+        {
+          "to": "user_abdox",
+          "relationship": "used_by",
+          "weight": 1.0
+        }
+      ],
+      "plc_program": [
+        {
+          "to": "guard_skills",
+          "relationship": "fixed_in_session",
+          "weight": 0.8
+        }
+      ],
+      "pdf_report": [
+        {
+          "to": "guard_skills",
+          "relationship": "generated_from",
+          "weight": 0.7
+        }
+      ],
+      "ghost_snapshot": [
+        {
+          "to": "memory_system",
+          "relationship": "documented_in",
+          "weight": 0.9
+        }
+      ],
+      "terabox": [
+        {
+          "to": "guard_skills",
+          "relationship": "backup_of",
+          "weight": 0.85
+        }
+      ]
+    }
+  },
+  "performance_metrics": {
+    "total_actions": 48,
+    "successful_actions": 45,
+    "failed_actions": 3,
+    "success_rate": 0.94,
+    "patterns_learned": 24,
+    "learnings_applied": 17,
+    "sessions_tracked": 13
+  }
+}

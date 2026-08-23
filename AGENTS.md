@@ -449,6 +449,13 @@
 
 318 public repos analyzed. Key patterns applied:
 
+### Session 2026-08-23 (Full Library Commit + Git DB Repair)
+- Committed entire library: 333 files, 224/224 SKILL.md tracked (was 13 files) - commits fdb56c1, 9c41da9
+- Removed .gitignore blocks: global *.ps1/*.bat, guards/workflow SKILL.md ignores
+- Diagnosed C:\\opencodes NTFS fault: create OK, delete/rename blocked -> git object writes fail (learning l021)
+- Repair: repack -a -d + fresh separate-git-dir (C:\\Users\\Abdox\\.opencode_git_storage\\guard-skills-clean.git) + .git pointer rewrite
+- Excluded idm/ (416MB Rust project, own-repo candidate); old guard-skills.git deletable later
+- **Outcome**: Library fully version-controlled; chkdsk /f still recommended (admin)
 ### Top Repos by Stars
 | Stars | Repo | Lesson |
 |-------|------|--------|
