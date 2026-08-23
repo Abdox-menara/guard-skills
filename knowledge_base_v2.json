@@ -614,6 +614,17 @@
         "core.autocrlf=true, gc.auto=50 set"
       ],
       "outcome": "Library validated 224/224 compliant + offsite bundle"
+    },
+    {
+      "date": "2026-08-23",
+      "name": "GO ALL: GitHub + Purge + chkdsk",
+      "findings": [
+        "Pushed to github.com/Abdox-menara/guard-skills (public, 359 files secret-scanned clean)",
+        "gh CLI fails on .git file pointer (separate-git-dir) - use manual git remote add + push",
+        "Old guard-skills.git purged; 627 locked files/0.8MB survive until chkdsk (507 in objects/9f)",
+        "chkdsk C: /F /X scheduled at next reboot (verified via elevated chkntfs)"
+      ],
+      "outcome": "Offsite backup live on GitHub, corruption fix queued for reboot"
     }
   ],
   "learnings": [
@@ -989,12 +1000,12 @@
     }
   },
   "performance_metrics": {
-    "total_actions": 53,
-    "successful_actions": 50,
+    "total_actions": 57,
+    "successful_actions": 54,
     "failed_actions": 3,
-    "success_rate": 0.94,
+    "success_rate": 0.95,
     "patterns_learned": 24,
     "learnings_applied": 17,
-    "sessions_tracked": 14
+    "sessions_tracked": 15
   }
 }
