@@ -1,4 +1,5 @@
 ---
+
 name: chaos-engineering
 version: 1.0.0
 author: Abdox
@@ -16,6 +17,9 @@ description: |
   
   ENVIRONMENT: Works with any codebase, any language, any framework.
 ---
+
+
+> **DEPRECATED**: Superseded by `chaos-engineering-workflow` (rich 4KB version). Kept for name compatibility.
 
 # chaos engineering - ULTRA-ADVANCED v1.0
 

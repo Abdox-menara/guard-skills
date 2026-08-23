@@ -457,6 +457,16 @@
 - Repair: repack -a -d + fresh separate-git-dir (C:\\Users\\Abdox\\.opencode_git_storage\\guard-skills-clean.git) + .git pointer rewrite
 - Excluded idm/ (416MB Rust project, own-repo candidate); old guard-skills.git deletable later
 - **Outcome**: Library fully version-controlled; chkdsk /f still recommended (admin)
+
+### Session 2026-08-23 (Input Blocker v68+v69 + Deep Audit + Purge)
+- Deep 2-layer analysis of H:\ai\Input Blocker (3.24 GB, v3-v67): reports in reports\ (Folder_Analysis + Deep_Technical docx)
+- Found: fake PQ-crypto shims (v62), NavItem ghost-text bug, 0 tests on v58 security modules, production crash traces
+- **v68 shipped**: Windows Hello unlock (winsdk), PQ shims deleted, safe-mode tabs, +31 tests (139)
+- **v69 "Hardening & Trust" shipped** (all 23 roadmap items): schema v2 migration, audit hash chain, ClipCursor hardening, Hello-gate, LAN localhost default, settings filter, security-tab split (9 builders), tray quick-actions, insights CSV/PNG export, scheduled profiles, i18n EN/FR/AR foundation, git repo+tag v69.0, pre-build gate (pytest->compile->PyInstaller), hex6 lint, key-budget guard, Inno Setup script
+- Deep layer: 1000-case fuzz found coerce dict-leak bug -> type safety-net; migration clamp added; tamper matrix verified; 170/170 tests
+- Workspace convention confirmed: true source lives H:\freebuff\Project\iblocker-vNN (v63 held v67 code); mirrored to H:\ai\Input Blocker\versions\vNN
+- **Purge**: build\ deleted (829 MB freed); 1,046 MB old EXEs consolidated to _archive_pre_v69\ (user may delete later); root .lnk clutter 31->0; kept lineage v64-v69 + v52.1 (~404 MB)
+- **Outcome**: v69.exe live via desktop shortcut; chkdsk /f still pending; user must manually verify Hello biometrics
 ### Top Repos by Stars
 | Stars | Repo | Lesson |
 |-------|------|--------|

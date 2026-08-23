@@ -1,0 +1,740 @@
+[
+ {
+  "a": "guards/ci-guard",
+  "b": "guards/config-guard",
+  "name_sim": 0.8,
+  "desc_sim": 0.81
+ },
+ {
+  "a": "guards/commit-guard",
+  "b": "guards/config-guard",
+  "name_sim": 0.75,
+  "desc_sim": 0.81
+ },
+ {
+  "a": "guards/changelog-guard",
+  "b": "guards/helm-guard",
+  "name_sim": 0.72,
+  "desc_sim": 0.8
+ },
+ {
+  "a": "guards/config-guard",
+  "b": "guards/json-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.8
+ },
+ {
+  "a": "guards/json-guard",
+  "b": "guards/python-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.8
+ },
+ {
+  "a": "guards/helm-guard",
+  "b": "guards/html-guard",
+  "name_sim": 0.8,
+  "desc_sim": 0.79
+ },
+ {
+  "a": "guards/changelog-guard",
+  "b": "workflow/changelog",
+  "name_sim": 0.75,
+  "desc_sim": 0.78
+ },
+ {
+  "a": "guards/json-guard",
+  "b": "guards/seo-guard",
+  "name_sim": 0.84,
+  "desc_sim": 0.78
+ },
+ {
+  "a": "guards/seo-guard",
+  "b": "guards/state-guard",
+  "name_sim": 0.8,
+  "desc_sim": 0.78
+ },
+ {
+  "a": "tools/audio-processing",
+  "b": "tools/image-processing",
+  "name_sim": 0.75,
+  "desc_sim": 0.78
+ },
+ {
+  "a": "workflow/code-migration",
+  "b": "workflow/data-migration",
+  "name_sim": 0.79,
+  "desc_sim": 0.77
+ },
+ {
+  "a": "guards/ci-guard",
+  "b": "guards/commit-guard",
+  "name_sim": 0.8,
+  "desc_sim": 0.76
+ },
+ {
+  "a": "guards/ci-guard",
+  "b": "guards/react-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.76
+ },
+ {
+  "a": "guards/html-guard",
+  "b": "guards/yaml-guard",
+  "name_sim": 0.8,
+  "desc_sim": 0.76
+ },
+ {
+  "a": "guards/pr-guard",
+  "b": "guards/react-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.76
+ },
+ {
+  "a": "guards/react-guard",
+  "b": "guards/readme-guard",
+  "name_sim": 0.78,
+  "desc_sim": 0.76
+ },
+ {
+  "a": "guards/analytics-guard",
+  "b": "tools/analytics",
+  "name_sim": 0.75,
+  "desc_sim": 0.75
+ },
+ {
+  "a": "guards/config-guard",
+  "b": "guards/file-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.75
+ },
+ {
+  "a": "guards/css-guard",
+  "b": "guards/json-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.75
+ },
+ {
+  "a": "guards/deploy-guard",
+  "b": "guards/helm-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.75
+ },
+ {
+  "a": "guards/build-guard",
+  "b": "guards/ci-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.74
+ },
+ {
+  "a": "guards/helm-guard",
+  "b": "guards/readme-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.74
+ },
+ {
+  "a": "guards/docker-compose-guard",
+  "b": "guards/docker-guard",
+  "name_sim": 0.75,
+  "desc_sim": 0.73
+ },
+ {
+  "a": "guards/helm-guard",
+  "b": "guards/seo-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.73
+ },
+ {
+  "a": "tools/capacity-management",
+  "b": "tools/incident-management",
+  "name_sim": 0.74,
+  "desc_sim": 0.73
+ },
+ {
+  "a": "guards/ci-guard",
+  "b": "guards/pr-guard",
+  "name_sim": 0.75,
+  "desc_sim": 0.72
+ },
+ {
+  "a": "guards/deploy-guard",
+  "b": "guards/seo-guard",
+  "name_sim": 0.76,
+  "desc_sim": 0.72
+ },
+ {
+  "a": "tools/audio-processing",
+  "b": "tools/batch-processing",
+  "name_sim": 0.75,
+  "desc_sim": 0.72
+ },
+ {
+  "a": "workflow/data-pipeline-workflow",
+  "b": "workflow/ml-pipeline-workflow",
+  "name_sim": 0.86,
+  "desc_sim": 0.72
+ },
+ {
+  "a": "guards/build-guard",
+  "b": "guards/file-guard",
+  "name_sim": 0.76,
+  "desc_sim": 0.71
+ },
+ {
+  "a": "guards/readme-guard",
+  "b": "guards/yaml-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.71
+ },
+ {
+  "a": "workflow/a-b-testing",
+  "b": "workflow/load-testing",
+  "name_sim": 0.78,
+  "desc_sim": 0.71
+ },
+ {
+  "a": "guards/ci-guard",
+  "b": "guards/css-guard",
+  "name_sim": 0.82,
+  "desc_sim": 0.7
+ },
+ {
+  "a": "guards/ci-guard",
+  "b": "guards/file-guard",
+  "name_sim": 0.78,
+  "desc_sim": 0.7
+ },
+ {
+  "a": "guards/csrf-guard",
+  "b": "guards/ssrf-guard",
+  "name_sim": 0.9,
+  "desc_sim": 0.7
+ },
+ {
+  "a": "guards/css-guard",
+  "b": "guards/seo-guard",
+  "name_sim": 0.78,
+  "desc_sim": 0.7
+ },
+ {
+  "a": "tools/batch-processing",
+  "b": "tools/image-processing",
+  "name_sim": 0.75,
+  "desc_sim": 0.7
+ },
+ {
+  "a": "workflow/api-design-workflow",
+  "b": "workflow/database-design-workflow",
+  "name_sim": 0.79,
+  "desc_sim": 0.7
+ },
+ {
+  "a": "guards/csrf-guard",
+  "b": "guards/xss-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.69
+ },
+ {
+  "a": "tools/cache-strategy",
+  "b": "tools/cdn-strategy",
+  "name_sim": 0.77,
+  "desc_sim": 0.69
+ },
+ {
+  "a": "tools/image-optimization",
+  "b": "tools/performance-optimization",
+  "name_sim": 0.76,
+  "desc_sim": 0.69
+ },
+ {
+  "a": "workflow/database-design-workflow",
+  "b": "workflow/database-migration-workflow",
+  "name_sim": 0.82,
+  "desc_sim": 0.69
+ },
+ {
+  "a": "guards/cors-guard",
+  "b": "guards/xss-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.68
+ },
+ {
+  "a": "guards/dead-code-guard",
+  "b": "guards/duplicate-code-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.68
+ },
+ {
+  "a": "guards/file-guard",
+  "b": "guards/seo-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.68
+ },
+ {
+  "a": "workflow/secrets-rotation-workflow",
+  "b": "workflow/security-testing-workflow",
+  "name_sim": 0.72,
+  "desc_sim": 0.68
+ },
+ {
+  "a": "guards/cors-guard",
+  "b": "guards/csrf-guard",
+  "name_sim": 0.8,
+  "desc_sim": 0.67
+ },
+ {
+  "a": "tools/data-management",
+  "b": "tools/incident-management",
+  "name_sim": 0.76,
+  "desc_sim": 0.67
+ },
+ {
+  "a": "guards/cors-guard",
+  "b": "guards/cqrs-guard",
+  "name_sim": 0.9,
+  "desc_sim": 0.66
+ },
+ {
+  "a": "guards/cqrs-guard",
+  "b": "guards/csrf-guard",
+  "name_sim": 0.8,
+  "desc_sim": 0.66
+ },
+ {
+  "a": "guards/cqrs-guard",
+  "b": "guards/xss-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.66
+ },
+ {
+  "a": "guards/iam-guard",
+  "b": "guards/naming-guard",
+  "name_sim": 0.76,
+  "desc_sim": 0.66
+ },
+ {
+  "a": "guards/naming-guard",
+  "b": "guards/saga-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.66
+ },
+ {
+  "a": "guards/repository-pattern-guard",
+  "b": "guards/strategy-pattern-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.66
+ },
+ {
+  "a": "tools/alerting-stack",
+  "b": "tools/tracing-stack",
+  "name_sim": 0.74,
+  "desc_sim": 0.66
+ },
+ {
+  "a": "tools/capacity-management",
+  "b": "tools/data-management",
+  "name_sim": 0.76,
+  "desc_sim": 0.66
+ },
+ {
+  "a": "tools/performance-optimization",
+  "b": "tools/seo-optimization",
+  "name_sim": 0.75,
+  "desc_sim": 0.66
+ },
+ {
+  "a": "guards/ssrf-guard",
+  "b": "guards/xss-guard",
+  "name_sim": 0.84,
+  "desc_sim": 0.65
+ },
+ {
+  "a": "tools/alerting-stack",
+  "b": "tools/logging-stack",
+  "name_sim": 0.74,
+  "desc_sim": 0.65
+ },
+ {
+  "a": "tools/database-optimization",
+  "b": "tools/image-optimization",
+  "name_sim": 0.77,
+  "desc_sim": 0.65
+ },
+ {
+  "a": "tools/database-optimization",
+  "b": "tools/seo-optimization",
+  "name_sim": 0.81,
+  "desc_sim": 0.65
+ },
+ {
+  "a": "workflow/api-design-workflow",
+  "b": "workflow/data-pipeline-workflow",
+  "name_sim": 0.73,
+  "desc_sim": 0.65
+ },
+ {
+  "a": "tools/backup-strategy",
+  "b": "tools/cache-strategy",
+  "name_sim": 0.76,
+  "desc_sim": 0.64
+ },
+ {
+  "a": "tools/monitoring-stack",
+  "b": "tools/tracing-stack",
+  "name_sim": 0.76,
+  "desc_sim": 0.64
+ },
+ {
+  "a": "guards/event-driven-guard",
+  "b": "guards/event-sourcing-guard",
+  "name_sim": 0.79,
+  "desc_sim": 0.63
+ },
+ {
+  "a": "tools/image-optimization",
+  "b": "tools/seo-optimization",
+  "name_sim": 0.82,
+  "desc_sim": 0.63
+ },
+ {
+  "a": "guards/hexagonal-guard",
+  "b": "guards/saga-guard",
+  "name_sim": 0.72,
+  "desc_sim": 0.62
+ },
+ {
+  "a": "tools/backup-strategy",
+  "b": "tools/cdn-strategy",
+  "name_sim": 0.74,
+  "desc_sim": 0.62
+ },
+ {
+  "a": "guards/config-guard",
+  "b": "guards/cors-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.61
+ },
+ {
+  "a": "guards/ddd-guard",
+  "b": "guards/dead-code-guard",
+  "name_sim": 0.75,
+  "desc_sim": 0.61
+ },
+ {
+  "a": "guards/encryption-guard",
+  "b": "guards/injection-guard",
+  "name_sim": 0.77,
+  "desc_sim": 0.61
+ },
+ {
+  "a": "guards/saga-guard",
+  "b": "guards/xss-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.61
+ },
+ {
+  "a": "tools/image-optimization",
+  "b": "tools/query-optimization",
+  "name_sim": 0.78,
+  "desc_sim": 0.61
+ },
+ {
+  "a": "tools/query-optimization",
+  "b": "tools/seo-optimization",
+  "name_sim": 0.82,
+  "desc_sim": 0.61
+ },
+ {
+  "a": "guards/migration-pattern-guard",
+  "b": "guards/strategy-pattern-guard",
+  "name_sim": 0.76,
+  "desc_sim": 0.6
+ },
+ {
+  "a": "workflow/user-story-mapping",
+  "b": "workflow/value-stream-mapping",
+  "name_sim": 0.74,
+  "desc_sim": 0.6
+ },
+ {
+  "a": "guards/ci-guard",
+  "b": "guards/cors-guard",
+  "name_sim": 0.78,
+  "desc_sim": 0.58
+ },
+ {
+  "a": "guards/iam-guard",
+  "b": "guards/saga-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.58
+ },
+ {
+  "a": "guards/observer-pattern-guard",
+  "b": "guards/repository-pattern-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.58
+ },
+ {
+  "a": "guards/observer-pattern-guard",
+  "b": "guards/strategy-pattern-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.58
+ },
+ {
+  "a": "workflow/database-design",
+  "b": "workflow/database-design-workflow",
+  "name_sim": 0.77,
+  "desc_sim": 0.58
+ },
+ {
+  "a": "guards/commit-guard",
+  "b": "guards/cors-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.57
+ },
+ {
+  "a": "guards/cors-guard",
+  "b": "guards/idor-guard",
+  "name_sim": 0.8,
+  "desc_sim": 0.57
+ },
+ {
+  "a": "guards/iam-guard",
+  "b": "guards/idor-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.57
+ },
+ {
+  "a": "guards/ddd-guard",
+  "b": "guards/idor-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.56
+ },
+ {
+  "a": "tools/analytics",
+  "b": "tools/analytics-setup",
+  "name_sim": 0.75,
+  "desc_sim": 0.56
+ },
+ {
+  "a": "tools/feature-flag-strategy",
+  "b": "workflow/feature-flags",
+  "name_sim": 0.76,
+  "desc_sim": 0.56
+ },
+ {
+  "a": "guards/cors-guard",
+  "b": "guards/css-guard",
+  "name_sim": 0.84,
+  "desc_sim": 0.55
+ },
+ {
+  "a": "guards/analytics-guard",
+  "b": "tools/analytics-setup",
+  "name_sim": 0.73,
+  "desc_sim": 0.54
+ },
+ {
+  "a": "guards/cors-guard",
+  "b": "guards/docker-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.54
+ },
+ {
+  "a": "guards/cors-guard",
+  "b": "guards/pr-guard",
+  "name_sim": 0.78,
+  "desc_sim": 0.54
+ },
+ {
+  "a": "guards/cors-guard",
+  "b": "guards/seo-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.54
+ },
+ {
+  "a": "guards/logging-pattern-guard",
+  "b": "guards/migration-pattern-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.54
+ },
+ {
+  "a": "guards/logging-pattern-guard",
+  "b": "tools/logging-patterns",
+  "name_sim": 0.81,
+  "desc_sim": 0.54
+ },
+ {
+  "a": "guards/naming-guard",
+  "b": "guards/yaml-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.54
+ },
+ {
+  "a": "guards/config-guard",
+  "b": "guards/naming-guard",
+  "name_sim": 0.75,
+  "desc_sim": 0.53
+ },
+ {
+  "a": "tools/capacity-management",
+  "b": "tools/state-management",
+  "name_sim": 0.74,
+  "desc_sim": 0.53
+ },
+ {
+  "a": "workflow/chaos-engineering",
+  "b": "workflow/chaos-engineering-workflow",
+  "name_sim": 0.79,
+  "desc_sim": 0.51
+ },
+ {
+  "a": "guards/html-guard",
+  "b": "guards/iam-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.5
+ },
+ {
+  "a": "guards/json-guard",
+  "b": "guards/jwt-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.5
+ },
+ {
+  "a": "guards/responsive-guard",
+  "b": "tools/responsive-design",
+  "name_sim": 0.73,
+  "desc_sim": 0.5
+ },
+ {
+  "a": "tools/state-management",
+  "b": "workflow/secrets-management",
+  "name_sim": 0.76,
+  "desc_sim": 0.49
+ },
+ {
+  "a": "guards/helm-guard",
+  "b": "guards/iam-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.48
+ },
+ {
+  "a": "guards/html-guard",
+  "b": "guards/jwt-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.48
+ },
+ {
+  "a": "guards/iam-guard",
+  "b": "guards/readme-guard",
+  "name_sim": 0.76,
+  "desc_sim": 0.48
+ },
+ {
+  "a": "guards/iam-guard",
+  "b": "guards/yaml-guard",
+  "name_sim": 0.84,
+  "desc_sim": 0.48
+ },
+ {
+  "a": "guards/pr-guard",
+  "b": "guards/ssrf-guard",
+  "name_sim": 0.78,
+  "desc_sim": 0.48
+ },
+ {
+  "a": "guards/async-guard",
+  "b": "guards/json-guard",
+  "name_sim": 0.76,
+  "desc_sim": 0.47
+ },
+ {
+  "a": "guards/async-guard",
+  "b": "guards/react-guard",
+  "name_sim": 0.73,
+  "desc_sim": 0.47
+ },
+ {
+  "a": "guards/comment-guard",
+  "b": "guards/commit-guard",
+  "name_sim": 0.88,
+  "desc_sim": 0.47
+ },
+ {
+  "a": "guards/comment-guard",
+  "b": "guards/config-guard",
+  "name_sim": 0.72,
+  "desc_sim": 0.47
+ },
+ {
+  "a": "tools/cache-strategy",
+  "b": "tools/content-strategy",
+  "name_sim": 0.73,
+  "desc_sim": 0.47
+ },
+ {
+  "a": "tools/cdn-strategy",
+  "b": "tools/content-strategy",
+  "name_sim": 0.79,
+  "desc_sim": 0.47
+ },
+ {
+  "a": "tools/data-management",
+  "b": "tools/state-management",
+  "name_sim": 0.84,
+  "desc_sim": 0.47
+ },
+ {
+  "a": "guards/async-guard",
+  "b": "guards/ci-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.46
+ },
+ {
+  "a": "guards/ci-guard",
+  "b": "guards/iam-guard",
+  "name_sim": 0.82,
+  "desc_sim": 0.46
+ },
+ {
+  "a": "guards/file-guard",
+  "b": "guards/iam-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.46
+ },
+ {
+  "a": "tools/image-optimization",
+  "b": "workflow/cost-optimization",
+  "name_sim": 0.74,
+  "desc_sim": 0.46
+ },
+ {
+  "a": "guards/csrf-guard",
+  "b": "guards/pr-guard",
+  "name_sim": 0.78,
+  "desc_sim": 0.45
+ },
+ {
+  "a": "guards/dead-code-guard",
+  "b": "guards/readme-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.45
+ },
+ {
+  "a": "guards/seo-guard",
+  "b": "guards/ssrf-guard",
+  "name_sim": 0.74,
+  "desc_sim": 0.45
+ },
+ {
+  "a": "guards/css-guard",
+  "b": "guards/xss-guard",
+  "name_sim": 0.89,
+  "desc_sim": 0.44
+ },
+ {
+  "a": "workflow/performance-audit",
+  "b": "workflow/performance-budget",
+  "name_sim": 0.86,
+  "desc_sim": 0.35
+ }
+]

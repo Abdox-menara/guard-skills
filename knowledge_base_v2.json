@@ -229,6 +229,10 @@
       "occurrences": 2,
       "first_seen": "2026-07-07",
       "last_seen": "2026-07-07"
+    },
+    {
+      "id": "p025",
+      "text": "Guard SKILL.md descriptions share boilerplate template -> text-similarity dedup must filter same-category pairs AND ignore template lines; real dupes show as name+name-workflow pairs"
     }
   ],
   "skills_index": {
@@ -639,6 +643,19 @@
         "README refreshed: real counts, Abdox-menara repo name, mojibake fixed"
       ],
       "outcome": "Self-maintaining library: 225 verified, weekly automation live"
+    },
+    {
+      "date": "2026-08-23",
+      "name": "GO: Validators + Dedup + Topics",
+      "findings": [
+        "tools/validate_skills.py finalized: block-scalar-aware desc check, code-fence link skip - 225/225 clean exit 0",
+        "maintain.ps1 now runs validation + secret scan weekly",
+        "Dedup analysis (123 raw pairs) - guard descriptions share template so trigram sim is noise; TRUE dupes = X + X-workflow pairs x3 (api-design, chaos-engineering, database-design)",
+        "3 thin stubs deprecated with pointers to rich variants",
+        "GitHub topics set: coding-agents, ai-guardrails, skills, code-quality, workflow-automation, opencode, claude-code, cursor",
+        "HANDOFF.md rewritten for 2026-08-23 state; shared-abdox.md synced"
+      ],
+      "outcome": "Self-validating repo with topics; dupes documented"
     }
   ],
   "learnings": [
@@ -1014,11 +1031,11 @@
     }
   },
   "performance_metrics": {
-    "total_actions": 65,
-    "successful_actions": 62,
+    "total_actions": 71,
+    "successful_actions": 68,
     "failed_actions": 3,
-    "success_rate": 0.95,
-    "patterns_learned": 24,
+    "success_rate": 0.96,
+    "patterns_learned": 25,
     "learnings_applied": 17,
     "sessions_tracked": 16
   }

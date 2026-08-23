@@ -16,6 +16,13 @@ Set-Location $repo
 python tools\build_index.py 2>&1 | Out-Null
 Log "index rebuilt"
 
+# 1b) Validate library (frontmatter + links) and scan for secrets
+$validation = python tools\validate_skills.py 2>&1
+Log ($validation | Select-Object -First 1)
+if ($LASTEXITCODE -ne 0) { Log "VALIDATION FAILED:"; Log ($validation | Out-String) }
+$secrets = python tools\secret_scan.py 2>&1 | Select-Object -Last 1
+Log "secret scan: $secrets"
+
 # 2) Commit + push if anything changed
 git add -A 2>$null
 $dirty = git status --short
