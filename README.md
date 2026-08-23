@@ -1,6 +1,8 @@
 # Guard Skills
 
-**Guard skills for coding agents: quality gates that catch AI-generated failure modes, plus workflow skills that prevent them in the first place.**
+**225 skills for coding agents: quality gates that catch AI-generated failure modes, workflow skills that prevent them, plus infrastructure tools.**
+
+> 72 guards · 83 tools · 67 workflow skills · 3 special (desktop-control-mcp, force-delete, self-learning)
 
 Best use: let your agent do the work, then invoke the relevant guard on the diff before you present, commit, or merge it. Or use the workflow skills to shape how the agent works from the start.
 
@@ -8,16 +10,16 @@ Best use: let your agent do the work, then invoke the relevant guard on the diff
 
 ```bash
 # Install all skills
-npx skills add YOUR_USERNAME/guard-skills
+npx skills add Abdox-menara/guard-skills
 
 # Install individual skills
-npx skills add YOUR_USERNAME/guard-skills --skill clean-code-guard
-npx skills add YOUR_USERNAME/guard-skills --skill test-guard
-npx skills add YOUR_USERNAME/guard-skills --skill grill-me
+npx skills add Abdox-menara/guard-skills --skill clean-code-guard
+npx skills add Abdox-menara/guard-skills --skill test-guard
+npx skills add Abdox-menara/guard-skills --skill grill-me
 
 # Install for a specific agent
-npx skills add YOUR_USERNAME/guard-skills --skill clean-code-guard --agent claude-code
-npx skills add YOUR_USERNAME/guard-skills --skill '*' --agent cursor
+npx skills add Abdox-menara/guard-skills --skill clean-code-guard --agent claude-code
+npx skills add Abdox-menara/guard-skills --skill '*' --agent cursor
 ```
 
 Works with Claude Code, Codex, Cursor, OpenCode, and other supported agents via the [Skills CLI](https://github.com/vercel-labs/skills).

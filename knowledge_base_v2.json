@@ -389,10 +389,7 @@
       "webhooks",
       "websockets",
       "windows-shortcut-repair",
-      "zero-downtime-deployment",
-      "force-delete",
-      "self-learning",
-      "desktop-control-mcp"
+      "zero-downtime-deployment"
     ],
     "workflow": [
       "a-b-testing",
@@ -434,7 +431,6 @@
       "incident-response-workflow",
       "load-testing",
       "localization",
-      "meta-skill-generator",
       "ml-pipeline-workflow",
       "pair-programming",
       "pdf-ocr",
@@ -463,6 +459,11 @@
       "user-story-mapping",
       "value-stream-mapping",
       "zoom-out"
+    ],
+    "special": [
+      "desktop-control-mcp",
+      "force-delete",
+      "self-learning"
     ]
   },
   "session_history": [

@@ -1,0 +1,919 @@
+{
+ "generated": "2026-08-23T00:54:19.208599+00:00",
+ "counts": {
+  "guards": 72,
+  "tools": 83,
+  "workflow": 67,
+  "special": 3
+ },
+ "index": {
+  "guards": [
+   {
+    "name": "analytics-guard",
+    "desc": "."
+   },
+   {
+    "name": "api-contract-guard",
+    "desc": ""
+   },
+   {
+    "name": "api-security-guard",
+    "desc": "."
+   },
+   {
+    "name": "async-guard",
+    "desc": ""
+   },
+   {
+    "name": "build-guard",
+    "desc": "."
+   },
+   {
+    "name": "changelog-guard",
+    "desc": "."
+   },
+   {
+    "name": "ci-guard",
+    "desc": "."
+   },
+   {
+    "name": "circuit-breaker-guard",
+    "desc": ""
+   },
+   {
+    "name": "clean-arch-guard",
+    "desc": ""
+   },
+   {
+    "name": "clean-code-guard",
+    "desc": "."
+   },
+   {
+    "name": "comment-guard",
+    "desc": ""
+   },
+   {
+    "name": "commit-guard",
+    "desc": "."
+   },
+   {
+    "name": "concurrency-guard",
+    "desc": "."
+   },
+   {
+    "name": "config-guard",
+    "desc": "."
+   },
+   {
+    "name": "cors-guard",
+    "desc": ""
+   },
+   {
+    "name": "cqrs-guard",
+    "desc": ""
+   },
+   {
+    "name": "csrf-guard",
+    "desc": ""
+   },
+   {
+    "name": "css-guard",
+    "desc": "."
+   },
+   {
+    "name": "cyclomatic-guard",
+    "desc": ""
+   },
+   {
+    "name": "ddd-guard",
+    "desc": ""
+   },
+   {
+    "name": "dead-code-guard",
+    "desc": ""
+   },
+   {
+    "name": "dependency-injection-guard",
+    "desc": "."
+   },
+   {
+    "name": "deploy-guard",
+    "desc": "."
+   },
+   {
+    "name": "docker-compose-guard",
+    "desc": "."
+   },
+   {
+    "name": "docker-guard",
+    "desc": "."
+   },
+   {
+    "name": "docs-guard",
+    "desc": "."
+   },
+   {
+    "name": "duplicate-code-guard",
+    "desc": ""
+   },
+   {
+    "name": "encryption-guard",
+    "desc": ""
+   },
+   {
+    "name": "env-check-guard",
+    "desc": "."
+   },
+   {
+    "name": "error-handling-guard",
+    "desc": "."
+   },
+   {
+    "name": "event-driven-guard",
+    "desc": ""
+   },
+   {
+    "name": "event-sourcing-guard",
+    "desc": ""
+   },
+   {
+    "name": "file-guard",
+    "desc": "."
+   },
+   {
+    "name": "graceful-shutdown-guard",
+    "desc": ""
+   },
+   {
+    "name": "health-check-guard",
+    "desc": ""
+   },
+   {
+    "name": "helm-guard",
+    "desc": "."
+   },
+   {
+    "name": "hexagonal-guard",
+    "desc": ""
+   },
+   {
+    "name": "html-guard",
+    "desc": "."
+   },
+   {
+    "name": "iam-guard",
+    "desc": ""
+   },
+   {
+    "name": "idor-guard",
+    "desc": ""
+   },
+   {
+    "name": "injection-guard",
+    "desc": ""
+   },
+   {
+    "name": "json-guard",
+    "desc": "."
+   },
+   {
+    "name": "jwt-guard",
+    "desc": ""
+   },
+   {
+    "name": "kubernetes-guard",
+    "desc": "."
+   },
+   {
+    "name": "large-class-guard",
+    "desc": ""
+   },
+   {
+    "name": "logging-pattern-guard",
+    "desc": "."
+   },
+   {
+    "name": "long-method-guard",
+    "desc": ""
+   },
+   {
+    "name": "lsp-guard",
+    "desc": "."
+   },
+   {
+    "name": "markdown-guard",
+    "desc": "."
+   },
+   {
+    "name": "message-queue-guard",
+    "desc": ""
+   },
+   {
+    "name": "migration-pattern-guard",
+    "desc": "."
+   },
+   {
+    "name": "naming-guard",
+    "desc": ""
+   },
+   {
+    "name": "nested-depth-guard",
+    "desc": ""
+   },
+   {
+    "name": "observer-pattern-guard",
+    "desc": "."
+   },
+   {
+    "name": "pr-guard",
+    "desc": "."
+   },
+   {
+    "name": "python-guard",
+    "desc": "."
+   },
+   {
+    "name": "react-guard",
+    "desc": "."
+   },
+   {
+    "name": "readme-guard",
+    "desc": "."
+   },
+   {
+    "name": "repository-pattern-guard",
+    "desc": "."
+   },
+   {
+    "name": "responsive-guard",
+    "desc": "."
+   },
+   {
+    "name": "retry-guard",
+    "desc": ""
+   },
+   {
+    "name": "saga-guard",
+    "desc": ""
+   },
+   {
+    "name": "seo-guard",
+    "desc": "."
+   },
+   {
+    "name": "serialization-guard",
+    "desc": "."
+   },
+   {
+    "name": "ssrf-guard",
+    "desc": ""
+   },
+   {
+    "name": "state-guard",
+    "desc": "."
+   },
+   {
+    "name": "strategy-pattern-guard",
+    "desc": "."
+   },
+   {
+    "name": "terraform-guard",
+    "desc": "."
+   },
+   {
+    "name": "test-guard",
+    "desc": "."
+   },
+   {
+    "name": "typescript-guard",
+    "desc": "."
+   },
+   {
+    "name": "xss-guard",
+    "desc": ""
+   },
+   {
+    "name": "yaml-guard",
+    "desc": "."
+   }
+  ],
+  "tools": [
+   {
+    "name": "accessibility-patterns",
+    "desc": ""
+   },
+   {
+    "name": "alerting-stack",
+    "desc": ""
+   },
+   {
+    "name": "analytics",
+    "desc": "."
+   },
+   {
+    "name": "analytics-setup",
+    "desc": ""
+   },
+   {
+    "name": "api-documentation",
+    "desc": ""
+   },
+   {
+    "name": "api-rate-limiting",
+    "desc": ""
+   },
+   {
+    "name": "api-versioning",
+    "desc": ""
+   },
+   {
+    "name": "audio-processing",
+    "desc": "."
+   },
+   {
+    "name": "backup-strategy",
+    "desc": ""
+   },
+   {
+    "name": "batch-processing",
+    "desc": "."
+   },
+   {
+    "name": "cache-strategy",
+    "desc": ""
+   },
+   {
+    "name": "capacity-management",
+    "desc": "."
+   },
+   {
+    "name": "cdn",
+    "desc": "."
+   },
+   {
+    "name": "cdn-strategy",
+    "desc": ""
+   },
+   {
+    "name": "cicd-pipeline",
+    "desc": ""
+   },
+   {
+    "name": "component-library",
+    "desc": "."
+   },
+   {
+    "name": "computer-vision",
+    "desc": "."
+   },
+   {
+    "name": "container-patterns",
+    "desc": "."
+   },
+   {
+    "name": "content-strategy",
+    "desc": "."
+   },
+   {
+    "name": "contract-testing",
+    "desc": ""
+   },
+   {
+    "name": "data-management",
+    "desc": "."
+   },
+   {
+    "name": "data-quality",
+    "desc": ""
+   },
+   {
+    "name": "data-warehouse",
+    "desc": "."
+   },
+   {
+    "name": "database-optimization",
+    "desc": ""
+   },
+   {
+    "name": "database-scaling",
+    "desc": ""
+   },
+   {
+    "name": "design-system",
+    "desc": ""
+   },
+   {
+    "name": "ecommerce",
+    "desc": "."
+   },
+   {
+    "name": "email-systems",
+    "desc": "."
+   },
+   {
+    "name": "error-boundary-patterns",
+    "desc": ""
+   },
+   {
+    "name": "etl",
+    "desc": "."
+   },
+   {
+    "name": "feature-flag-strategy",
+    "desc": ""
+   },
+   {
+    "name": "freebuff-bridge",
+    "desc": "."
+   },
+   {
+    "name": "full-text-search",
+    "desc": "."
+   },
+   {
+    "name": "graph-database",
+    "desc": "."
+   },
+   {
+    "name": "grpc",
+    "desc": "."
+   },
+   {
+    "name": "image-optimization",
+    "desc": ""
+   },
+   {
+    "name": "image-processing",
+    "desc": "."
+   },
+   {
+    "name": "incident-management",
+    "desc": "."
+   },
+   {
+    "name": "index-design",
+    "desc": ""
+   },
+   {
+    "name": "information-architecture",
+    "desc": "."
+   },
+   {
+    "name": "input-blocker",
+    "desc": "Block keyboard and mouse input on Windows until manually unblocked."
+   },
+   {
+    "name": "logging-patterns",
+    "desc": ""
+   },
+   {
+    "name": "logging-stack",
+    "desc": ""
+   },
+   {
+    "name": "makefile",
+    "desc": ""
+   },
+   {
+    "name": "mfa",
+    "desc": "."
+   },
+   {
+    "name": "microservice-patterns",
+    "desc": "."
+   },
+   {
+    "name": "monitoring-stack",
+    "desc": ""
+   },
+   {
+    "name": "nlp",
+    "desc": "."
+   },
+   {
+    "name": "nosql",
+    "desc": "."
+   },
+   {
+    "name": "notification",
+    "desc": "."
+   },
+   {
+    "name": "oauth",
+    "desc": "."
+   },
+   {
+    "name": "payment",
+    "desc": "."
+   },
+   {
+    "name": "performance-monitoring",
+    "desc": "."
+   },
+   {
+    "name": "performance-optimization",
+    "desc": ""
+   },
+   {
+    "name": "protocol-buffers",
+    "desc": "."
+   },
+   {
+    "name": "pwa",
+    "desc": "."
+   },
+   {
+    "name": "query-optimization",
+    "desc": ""
+   },
+   {
+    "name": "rbac",
+    "desc": "."
+   },
+   {
+    "name": "real-time",
+    "desc": "."
+   },
+   {
+    "name": "responsive-design",
+    "desc": ""
+   },
+   {
+    "name": "rest-api",
+    "desc": "."
+   },
+   {
+    "name": "scrcpy-install",
+    "desc": "."
+   },
+   {
+    "name": "search-engine",
+    "desc": "."
+   },
+   {
+    "name": "seo",
+    "desc": "."
+   },
+   {
+    "name": "seo-optimization",
+    "desc": ""
+   },
+   {
+    "name": "serverless-patterns",
+    "desc": "."
+   },
+   {
+    "name": "service-mesh",
+    "desc": "."
+   },
+   {
+    "name": "shell-scripting",
+    "desc": ""
+   },
+   {
+    "name": "skill-generator-tool",
+    "desc": "ULTRA-ADVANCED Batch Skill Generator \u2014 creates, improves, and manages AI coding "
+   },
+   {
+    "name": "sso",
+    "desc": "."
+   },
+   {
+    "name": "state-management",
+    "desc": ""
+   },
+   {
+    "name": "static-sites",
+    "desc": "."
+   },
+   {
+    "name": "streaming",
+    "desc": "."
+   },
+   {
+    "name": "terabox-integration",
+    "desc": ""
+   },
+   {
+    "name": "testing-pyramid",
+    "desc": ""
+   },
+   {
+    "name": "time-series",
+    "desc": "."
+   },
+   {
+    "name": "tracing-stack",
+    "desc": ""
+   },
+   {
+    "name": "vector-database",
+    "desc": "."
+   },
+   {
+    "name": "video-processing",
+    "desc": "l"
+   },
+   {
+    "name": "webhooks",
+    "desc": "."
+   },
+   {
+    "name": "websockets",
+    "desc": "."
+   },
+   {
+    "name": "windows-shortcut-repair",
+    "desc": "ULTRA-ADVANCED Windows Shortcut Repair \u2014 GUI + CLI with monitoring, export, back"
+   },
+   {
+    "name": "zero-downtime-deployment",
+    "desc": ""
+   }
+  ],
+  "workflow": [
+   {
+    "name": "a-b-testing",
+    "desc": "."
+   },
+   {
+    "name": "acceptance-testing",
+    "desc": ""
+   },
+   {
+    "name": "api-design",
+    "desc": "."
+   },
+   {
+    "name": "api-design-workflow",
+    "desc": ""
+   },
+   {
+    "name": "architecture-decision-record",
+    "desc": "."
+   },
+   {
+    "name": "atdd",
+    "desc": ""
+   },
+   {
+    "name": "backlog-grooming",
+    "desc": "."
+   },
+   {
+    "name": "bdd-workflow",
+    "desc": ""
+   },
+   {
+    "name": "changelog",
+    "desc": "."
+   },
+   {
+    "name": "chaos-engineering",
+    "desc": "."
+   },
+   {
+    "name": "chaos-engineering-workflow",
+    "desc": ""
+   },
+   {
+    "name": "code-migration",
+    "desc": "."
+   },
+   {
+    "name": "code-review-workflow",
+    "desc": ""
+   },
+   {
+    "name": "compliance",
+    "desc": "."
+   },
+   {
+    "name": "continuous-improvement",
+    "desc": ""
+   },
+   {
+    "name": "cost-optimization",
+    "desc": "."
+   },
+   {
+    "name": "data-migration",
+    "desc": "."
+   },
+   {
+    "name": "data-pipeline-workflow",
+    "desc": ""
+   },
+   {
+    "name": "database-design",
+    "desc": "."
+   },
+   {
+    "name": "database-design-workflow",
+    "desc": ""
+   },
+   {
+    "name": "database-migration-workflow",
+    "desc": ""
+   },
+   {
+    "name": "decision-log",
+    "desc": "."
+   },
+   {
+    "name": "definition-of-done",
+    "desc": "."
+   },
+   {
+    "name": "dependency-update",
+    "desc": "."
+   },
+   {
+    "name": "diagnose",
+    "desc": "."
+   },
+   {
+    "name": "disaster-recovery",
+    "desc": "."
+   },
+   {
+    "name": "documentation-as-code",
+    "desc": "."
+   },
+   {
+    "name": "estimation",
+    "desc": "."
+   },
+   {
+    "name": "event-storming",
+    "desc": ""
+   },
+   {
+    "name": "example-mapping",
+    "desc": ""
+   },
+   {
+    "name": "exploratory-testing",
+    "desc": ""
+   },
+   {
+    "name": "feature-flags",
+    "desc": "."
+   },
+   {
+    "name": "grill-me",
+    "desc": "."
+   },
+   {
+    "name": "handoff",
+    "desc": "."
+   },
+   {
+    "name": "impact-mapping",
+    "desc": ""
+   },
+   {
+    "name": "incident-postmortem",
+    "desc": "."
+   },
+   {
+    "name": "incident-response-workflow",
+    "desc": ""
+   },
+   {
+    "name": "load-testing",
+    "desc": "."
+   },
+   {
+    "name": "localization",
+    "desc": "."
+   },
+   {
+    "name": "ml-pipeline-workflow",
+    "desc": ""
+   },
+   {
+    "name": "pair-programming",
+    "desc": ""
+   },
+   {
+    "name": "pdf-ocr",
+    "desc": "."
+   },
+   {
+    "name": "performance-audit",
+    "desc": "."
+   },
+   {
+    "name": "performance-budget",
+    "desc": "."
+   },
+   {
+    "name": "performance-testing-workflow",
+    "desc": ""
+   },
+   {
+    "name": "refactoring-workflow",
+    "desc": "."
+   },
+   {
+    "name": "release-notes",
+    "desc": "."
+   },
+   {
+    "name": "requirements-gathering",
+    "desc": "."
+   },
+   {
+    "name": "retrospective",
+    "desc": "."
+   },
+   {
+    "name": "runbook",
+    "desc": "."
+   },
+   {
+    "name": "secrets-management",
+    "desc": "."
+   },
+   {
+    "name": "secrets-rotation-workflow",
+    "desc": ""
+   },
+   {
+    "name": "security-review",
+    "desc": "."
+   },
+   {
+    "name": "security-testing-workflow",
+    "desc": ""
+   },
+   {
+    "name": "semantic-versioning",
+    "desc": "."
+   },
+   {
+    "name": "specification-by-example",
+    "desc": ""
+   },
+   {
+    "name": "sprint-planning",
+    "desc": "."
+   },
+   {
+    "name": "story-splitting",
+    "desc": "."
+   },
+   {
+    "name": "tdd",
+    "desc": "."
+   },
+   {
+    "name": "technical-debt",
+    "desc": "."
+   },
+   {
+    "name": "technical-specification",
+    "desc": "."
+   },
+   {
+    "name": "terabox-improvement",
+    "desc": ""
+   },
+   {
+    "name": "usability-testing",
+    "desc": "."
+   },
+   {
+    "name": "user-research",
+    "desc": "."
+   },
+   {
+    "name": "user-story-mapping",
+    "desc": ""
+   },
+   {
+    "name": "value-stream-mapping",
+    "desc": ""
+   },
+   {
+    "name": "zoom-out",
+    "desc": "."
+   }
+  ],
+  "special": [
+   {
+    "name": "desktop-control-mcp",
+    "desc": "Enhanced Desktop Control MCP Server for advanced Windows PC control with AI/ML i"
+   },
+   {
+    "name": "force-delete",
+    "desc": "Automates the removal of protected directories that throw **\"Access is denied\"**"
+   },
+   {
+    "name": "self-learning",
+    "desc": "# Self-Learning Engine - ULTRA-ADVANCED v5.0"
+   }
+  ]
+ }
+}
