@@ -28,6 +28,16 @@
 ✅ #13 consistency report — p50=109 lines, max=video-processing(1093), 2 bare skills fixed
 Commit `5757bab` pushed ✅
 
+**Session 2026-08-23 (5) — Quick-wins batch DONE:**
+✅ #65 Storage Sense ON (temp 7d + recycle auto)
+✅ #93 .config/opencode backed up to H:\Backups\opencode-config
+✅ #86 env check: OpenRouter+Cloudflare OK; OPENCODE_API_KEY missing (deepseek auth OK via auth.json); Ghost v7 healthy
+✅ #88 Ghost memory.json → H:\Backups\ghost-memory-v7-backup.json
+✅ #54 Terabox audit: split ISOs = StartDrive V18 + TIA STEP7 V18 DVD2 (12 GB, valuable PLC software — KEEP; concat pending)
+✅ #55 Downloads audit: ESA training materials 6.2 GB (KEEP)
+✅ #32 Windows Update check: 3 pending (PS 7.6.3/7.6.5, Defender sig) — install on next reboot cycle
+📌 NEW FINDING: TIA Portal V18 DVD2 parts found in D:\Terabox\+a Drive — concat .P1+.P2 to rebuild ISO
+
 **Session 2026-08-23 (2) — #4 DONE:** Dedup analysis executed. Findings: 0 exact-duplicate bodies in 222 skills; dedupe_report.json pairs were template false-positives. Real issue = 5 trigger collisions (identical phrases, stub vs rich twin). Merged: deleted 5 skeleton stubs (tools/seo, workflow/api-design, chaos-engineering, database-design, feature-flags), kept rich twins. Library: **225 → 220** (72G/82T/63W/3S). NTFS lock hit during delete — force-delete method worked. Commit `99fbc12` pushed ✅
 
 ## A. Guard Skills Repo (25)
