@@ -48,3 +48,7 @@ Full-text search implementation, tokenization, and ranking algorithms
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [search-engine](../search-engine/SKILL.md)

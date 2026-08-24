@@ -48,3 +48,7 @@ Information architecture design, navigation patterns, and content organization
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [architecture-decision-record](../../workflow/architecture-decision-record/SKILL.md)

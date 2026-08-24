@@ -48,3 +48,10 @@ Performance budget creation, monitoring, and enforcement
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [performance-monitoring](../../tools/performance-monitoring/SKILL.md)
+- [performance-optimization](../../tools/performance-optimization/SKILL.md)
+- [performance-audit](../performance-audit/SKILL.md)
+- [performance-testing-workflow](../performance-testing-workflow/SKILL.md)

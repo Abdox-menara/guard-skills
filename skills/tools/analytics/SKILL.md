@@ -49,3 +49,8 @@ Analytics implementation, event tracking, dashboards, and user behavior
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [analytics-guard](../../guards/analytics-guard/SKILL.md)
+- [analytics-setup](../analytics-setup/SKILL.md)

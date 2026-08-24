@@ -107,3 +107,8 @@ class DependencyInjectionGuard:
 **Status**: PRODUCTION READY
 **Patterns**: 8
 **Standards**: Mark Seemann DI.NET; Composition Root
+
+## See Also
+
+- [injection-guard](../injection-guard/SKILL.md)
+- [dependency-update](../../workflow/dependency-update/SKILL.md)

@@ -107,3 +107,8 @@ class ApiSecurityGuard:
 **Status**: PRODUCTION READY
 **Patterns**: 8
 **Standards**: OWASP API Security Top 10; NIST SP 800-95
+
+## See Also
+
+- [security-review](../../workflow/security-review/SKILL.md)
+- [security-testing-workflow](../../workflow/security-testing-workflow/SKILL.md)

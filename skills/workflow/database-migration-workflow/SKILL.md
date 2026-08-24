@@ -107,3 +107,11 @@ class DatabaseMigrationWorkflow:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [migration-pattern-guard](../../guards/migration-pattern-guard/SKILL.md)
+- [database-optimization](../../tools/database-optimization/SKILL.md)
+- [database-scaling](../../tools/database-scaling/SKILL.md)
+- [graph-database](../../tools/graph-database/SKILL.md)
+- [vector-database](../../tools/vector-database/SKILL.md)

@@ -48,3 +48,8 @@ Analytics implementation validation, event tracking, and data privacy
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [analytics](../../tools/analytics/SKILL.md)
+- [analytics-setup](../../tools/analytics-setup/SKILL.md)

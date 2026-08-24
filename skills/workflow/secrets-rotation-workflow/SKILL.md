@@ -107,3 +107,7 @@ class SecretsRotationWorkflow:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [secrets-management](../secrets-management/SKILL.md)

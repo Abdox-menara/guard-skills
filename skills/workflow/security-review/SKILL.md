@@ -48,3 +48,8 @@ Security review workflow, threat modeling, and vulnerability assessment
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [api-security-guard](../../guards/api-security-guard/SKILL.md)
+- [security-testing-workflow](../security-testing-workflow/SKILL.md)

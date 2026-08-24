@@ -48,3 +48,7 @@ Responsive design validation, breakpoint checking, and mobile compatibility
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [responsive-design](../../tools/responsive-design/SKILL.md)

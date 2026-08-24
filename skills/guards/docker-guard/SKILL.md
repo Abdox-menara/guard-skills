@@ -48,3 +48,7 @@ Dockerfile optimization, security best practices, and multi-stage builds
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [docker-compose-guard](../docker-compose-guard/SKILL.md)

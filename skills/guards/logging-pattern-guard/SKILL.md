@@ -107,3 +107,8 @@ class LoggingPatternGuard:
 **Status**: PRODUCTION READY
 **Patterns**: 8
 **Standards**: 12 Factor Apps; OpenTelemetry logs; ELK
+
+## See Also
+
+- [logging-patterns](../../tools/logging-patterns/SKILL.md)
+- [logging-stack](../../tools/logging-stack/SKILL.md)

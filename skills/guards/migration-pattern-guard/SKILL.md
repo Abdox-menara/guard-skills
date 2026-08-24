@@ -107,3 +107,9 @@ class MigrationPatternGuard:
 **Status**: PRODUCTION READY
 **Patterns**: 8
 **Standards**: Flyway practices; Expand-Migrate-Contract
+
+## See Also
+
+- [code-migration](../../workflow/code-migration/SKILL.md)
+- [data-migration](../../workflow/data-migration/SKILL.md)
+- [database-migration-workflow](../../workflow/database-migration-workflow/SKILL.md)

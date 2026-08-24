@@ -13,6 +13,28 @@ CATS = [
 SPECIAL_SKILLS = ["desktop-control-mcp", "force-delete", "self-learning"]
 
 
+SKIP_LINES = (
+    "CAPABILITIES",
+    "TRIGGER",
+    "ENVIRONMENT",
+    "FEATURES",
+    "STANDARDS",
+    "SECURITY",
+    "METHODOLOGY",
+    "TOOLS INCLUDED",
+)
+
+
+def _clean_desc(d):
+    d = " ".join(d.split())
+    m = re.match(r"ULTRA-ADVANCED\b[^-\n]*\s+-\s+(.*)", d, re.I)
+    if m:
+        d = m.group(1).strip()
+    if d and d[0].isalpha():
+        d = d[0].upper() + d[1:]
+    return d
+
+
 def parse_skill(skill_md):
     t = open(skill_md, encoding="utf-8", errors="replace").read()
     m = re.match(r"^---\s*\n(.*?)\n---", t, re.S)
@@ -20,13 +42,21 @@ def parse_skill(skill_md):
         return None, None
     fm = m.group(1)
     name = re.search(r"^name:\s*(.+)", fm, re.M)
-    desc = re.search(r"description:\s*(\|.*)?(.+)", fm, re.S)
     n = name.group(1).strip() if name else None
     d = ""
-    if desc:
-        raw = desc.group(2) or ""
-        d = " ".join(raw.split())
-    return n, d[:80]
+    # Block scalar: description: | / > followed by indented lines
+    dm = re.search(r"^description:[ \t]*[|>][^\n]*\n((?:[ \t]+[^\n]*\n?)+)", fm, re.M)
+    if dm:
+        for ln in (x.strip() for x in dm.group(1).splitlines()):
+            if ln and ln != "." and not ln.startswith(SKIP_LINES) and not set(ln) <= {"-", "="}:
+                d = ln
+                break
+    else:
+        # Plain single-line description
+        dp = re.search(r"^description:[ \t]+(.+)$", fm, re.M)
+        if dp:
+            d = dp.group(1).strip()
+    return n, _clean_desc(d)[:100]
 
 
 def scan():

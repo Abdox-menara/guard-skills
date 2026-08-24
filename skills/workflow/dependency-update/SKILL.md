@@ -48,3 +48,7 @@ Dependency update workflow, breaking change analysis, and automation
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [dependency-injection-guard](../../guards/dependency-injection-guard/SKILL.md)

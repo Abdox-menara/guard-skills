@@ -107,3 +107,7 @@ class DecisionLog:
 **Status**: PRODUCTION READY
 **Patterns**: 8
 **Standards**: ADR by Michael Nygard; Y-Statements
+
+## See Also
+
+- [architecture-decision-record](../architecture-decision-record/SKILL.md)

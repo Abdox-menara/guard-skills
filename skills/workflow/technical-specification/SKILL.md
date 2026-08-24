@@ -107,3 +107,8 @@ class TechnicalSpecification:
 **Status**: PRODUCTION READY
 **Patterns**: 8
 **Standards**: Google Design Docs; ADR; RFC 2119
+
+## See Also
+
+- [specification-by-example](../specification-by-example/SKILL.md)
+- [technical-debt](../technical-debt/SKILL.md)

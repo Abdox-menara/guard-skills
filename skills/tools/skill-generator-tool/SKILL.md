@@ -1,6 +1,7 @@
 ---
 name: skill-generator-tool
-description: ULTRA-ADVANCED Batch Skill Generator — creates, improves, and manages AI coding agent skill files at scale. Commands: list, create, improve, inventory, stats, find, template, dedupe, clean. Based on the methodology used to build a 292-skill ecosystem.
+description: ULTRA-ADVANCED Batch Skill Generator - creates, improves, and manages AI coding agent skill files at scale. Commands: list, create, improve, inventory, stats, find, template, dedupe, clean. Based on the methodology used to build a 292-skill ecosystem.
+  TRIGGER PHRASES: "skill generator, batch skills, create skills, improve skills"
 ---
 
 # Skill Generator Tool

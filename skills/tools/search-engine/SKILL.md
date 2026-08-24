@@ -49,3 +49,7 @@ Search engine integration, indexing strategy, and relevance tuning
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [full-text-search](../full-text-search/SKILL.md)

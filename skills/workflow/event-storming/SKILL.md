@@ -107,3 +107,8 @@ class EventStorming:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [event-driven-guard](../../guards/event-driven-guard/SKILL.md)
+- [event-sourcing-guard](../../guards/event-sourcing-guard/SKILL.md)

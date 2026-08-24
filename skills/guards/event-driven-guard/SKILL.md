@@ -107,3 +107,8 @@ class EventDrivenGuard:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [event-sourcing-guard](../event-sourcing-guard/SKILL.md)
+- [event-storming](../../workflow/event-storming/SKILL.md)

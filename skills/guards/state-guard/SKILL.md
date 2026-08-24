@@ -48,3 +48,7 @@ State management validation and anti-pattern detection
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [state-management](../../tools/state-management/SKILL.md)

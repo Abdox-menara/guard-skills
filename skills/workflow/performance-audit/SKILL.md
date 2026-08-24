@@ -107,3 +107,10 @@ class PerformanceAudit:
 **Status**: PRODUCTION READY
 **Patterns**: 8
 **Standards**: SRE Handbook; Web Vitals; JMeter
+
+## See Also
+
+- [performance-monitoring](../../tools/performance-monitoring/SKILL.md)
+- [performance-optimization](../../tools/performance-optimization/SKILL.md)
+- [performance-budget](../performance-budget/SKILL.md)
+- [performance-testing-workflow](../performance-testing-workflow/SKILL.md)

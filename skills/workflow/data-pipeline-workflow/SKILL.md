@@ -107,3 +107,8 @@ class DataPipelineWorkflow:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [cicd-pipeline](../../tools/cicd-pipeline/SKILL.md)
+- [ml-pipeline-workflow](../ml-pipeline-workflow/SKILL.md)

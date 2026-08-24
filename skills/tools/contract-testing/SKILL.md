@@ -107,3 +107,7 @@ class ContractTesting:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [api-contract-guard](../../guards/api-contract-guard/SKILL.md)

@@ -49,3 +49,11 @@ Performance monitoring setup, RUM, synthetic monitoring, and alerting
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [monitoring-stack](../monitoring-stack/SKILL.md)
+- [performance-optimization](../performance-optimization/SKILL.md)
+- [performance-audit](../../workflow/performance-audit/SKILL.md)
+- [performance-budget](../../workflow/performance-budget/SKILL.md)
+- [performance-testing-workflow](../../workflow/performance-testing-workflow/SKILL.md)

@@ -107,3 +107,7 @@ class ImageOptimization:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [image-processing](../image-processing/SKILL.md)

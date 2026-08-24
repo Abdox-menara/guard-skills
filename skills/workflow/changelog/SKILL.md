@@ -48,3 +48,7 @@ Changelog management workflow with automated generation and release notes
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [changelog-guard](../../guards/changelog-guard/SKILL.md)

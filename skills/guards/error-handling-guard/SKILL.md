@@ -48,3 +48,7 @@ Error handling patterns and exception safety validation
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [error-boundary-patterns](../../tools/error-boundary-patterns/SKILL.md)

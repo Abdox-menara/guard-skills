@@ -48,3 +48,9 @@ Code migration workflow with compatibility analysis and rollback planning
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [migration-pattern-guard](../../guards/migration-pattern-guard/SKILL.md)
+- [data-migration](../data-migration/SKILL.md)
+- [database-migration-workflow](../database-migration-workflow/SKILL.md)

@@ -49,3 +49,7 @@ Time series data management, forecasting, and anomaly detection
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [real-time](../real-time/SKILL.md)

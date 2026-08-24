@@ -48,3 +48,7 @@ SEO validation, meta tags, structured data, and accessibility impact
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [seo-optimization](../../tools/seo-optimization/SKILL.md)

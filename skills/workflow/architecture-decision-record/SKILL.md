@@ -48,3 +48,8 @@ ADR creation, review, and management workflow
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [information-architecture](../../tools/information-architecture/SKILL.md)
+- [decision-log](../decision-log/SKILL.md)

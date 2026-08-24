@@ -1,6 +1,7 @@
 ---
 name: input-blocker
 description: Block keyboard and mouse input on Windows until manually unblocked.
+  TRIGGER PHRASES: "block keyboard, block mouse, lock input, input blocker"
 ---
 
 # Input Blocker v3.0

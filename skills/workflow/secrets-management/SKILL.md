@@ -48,3 +48,7 @@ Secrets management workflow, rotation strategies, and vault integration
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [secrets-rotation-workflow](../secrets-rotation-workflow/SKILL.md)

@@ -48,3 +48,7 @@ Technical debt identification, quantification, and management strategy
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [technical-specification](../technical-specification/SKILL.md)

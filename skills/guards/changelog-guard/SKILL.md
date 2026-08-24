@@ -48,3 +48,7 @@ Changelog format validation and completeness checking
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [changelog](../../workflow/changelog/SKILL.md)

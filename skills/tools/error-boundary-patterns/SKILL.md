@@ -107,3 +107,7 @@ class ErrorBoundaryPatterns:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [error-handling-guard](../../guards/error-handling-guard/SKILL.md)

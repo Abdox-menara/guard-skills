@@ -48,3 +48,7 @@ Environment variable validation and security checking
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [health-check-guard](../health-check-guard/SKILL.md)

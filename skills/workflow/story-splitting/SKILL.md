@@ -107,3 +107,7 @@ class StorySplitting:
 **Status**: PRODUCTION READY
 **Patterns**: 8
 **Standards**: SPIDIR; INVEST principles
+
+## See Also
+
+- [user-story-mapping](../user-story-mapping/SKILL.md)

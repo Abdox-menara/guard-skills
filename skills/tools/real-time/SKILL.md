@@ -49,3 +49,7 @@ Real-time system design with WebSockets, SSE, and event-driven architecture
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [time-series](../time-series/SKILL.md)

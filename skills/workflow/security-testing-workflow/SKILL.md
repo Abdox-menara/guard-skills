@@ -107,3 +107,8 @@ class SecurityTestingWorkflow:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [api-security-guard](../../guards/api-security-guard/SKILL.md)
+- [security-review](../security-review/SKILL.md)

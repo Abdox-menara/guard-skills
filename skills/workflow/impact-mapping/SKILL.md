@@ -107,3 +107,9 @@ class ImpactMapping:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [example-mapping](../example-mapping/SKILL.md)
+- [user-story-mapping](../user-story-mapping/SKILL.md)
+- [value-stream-mapping](../value-stream-mapping/SKILL.md)

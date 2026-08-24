@@ -107,3 +107,11 @@ class DatabaseScaling:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [database-optimization](../database-optimization/SKILL.md)
+- [graph-database](../graph-database/SKILL.md)
+- [vector-database](../vector-database/SKILL.md)
+- [database-design-workflow](../../workflow/database-design-workflow/SKILL.md)
+- [database-migration-workflow](../../workflow/database-migration-workflow/SKILL.md)

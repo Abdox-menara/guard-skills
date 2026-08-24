@@ -107,3 +107,8 @@ class AnalyticsSetup:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [analytics-guard](../../guards/analytics-guard/SKILL.md)
+- [analytics](../analytics/SKILL.md)

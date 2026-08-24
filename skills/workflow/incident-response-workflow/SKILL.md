@@ -107,3 +107,8 @@ class IncidentResponseWorkflow:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [incident-management](../../tools/incident-management/SKILL.md)
+- [incident-postmortem](../incident-postmortem/SKILL.md)

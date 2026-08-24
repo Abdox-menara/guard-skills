@@ -107,3 +107,10 @@ class PerformanceTestingWorkflow:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [performance-monitoring](../../tools/performance-monitoring/SKILL.md)
+- [performance-optimization](../../tools/performance-optimization/SKILL.md)
+- [performance-audit](../performance-audit/SKILL.md)
+- [performance-budget](../performance-budget/SKILL.md)

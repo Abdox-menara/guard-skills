@@ -1,8 +1,8 @@
 # Guard Skills
 
-**225 skills for coding agents: quality gates that catch AI-generated failure modes, workflow skills that prevent them, plus infrastructure tools.**
+**220 skills for coding agents: quality gates that catch AI-generated failure modes, workflow skills that prevent them, plus infrastructure tools.**
 
-> 72 guards · 83 tools · 67 workflow skills · 3 special (desktop-control-mcp, force-delete, self-learning)
+> 72 guards · 82 tools · 63 workflow skills · 3 special (desktop-control-mcp, force-delete, self-learning)
 
 Best use: let your agent do the work, then invoke the relevant guard on the diff before you present, commit, or merge it. Or use the workflow skills to shape how the agent works from the start.
 
@@ -104,6 +104,38 @@ skills/
     ├── ai-failure-modes.md
     ├── solid-principles.md
     └── testing-patterns.md
+```
+
+## Authoring Skills
+
+Each skill lives in `skills/<category>/<name>/SKILL.md` with YAML frontmatter:
+
+```yaml
+---
+name: my-skill          # kebab-case, unique across the library
+version: 1.0.0
+author: Abdox
+description: |
+  One-line purpose (first line matters — it populates the index).
+  TRIGGER PHRASES: "phrase one, phrase two"
+  ENVIRONMENT: Works with any codebase, any language, any framework.
+---
+```
+
+**Rules**
+
+1. `name` must match the folder name and be unique library-wide.
+2. The first description line is the index "Purpose" — make it specific, skip marketing prefixes.
+3. Trigger phrases must not collide with another skill's triggers (CI checks index drift; run `python tools/build_index.py` before committing).
+4. Keep SKILL.md under ~150 lines; put deep material in `references/` and link it — progressive disclosure keeps context small.
+5. No executables, no network calls, no credentials — Markdown instructions only.
+
+**Before submitting:** run the validators and commit everything they touch:
+
+```bash
+python tools/validate_skills.py   # frontmatter, descriptions, links
+python tools/secret_scan.py       # no leaked keys
+python tools/build_index.py       # regenerate AGENTS.md §4 + skills_index.json
 ```
 
 ## Trust and Validation

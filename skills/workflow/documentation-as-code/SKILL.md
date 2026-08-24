@@ -48,3 +48,7 @@ Documentation as code workflow with automated building and deployment
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [api-documentation](../../tools/api-documentation/SKILL.md)

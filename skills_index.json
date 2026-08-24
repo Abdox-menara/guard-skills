@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-24T20:48:57.742307+00:00",
+ "generated": "2026-08-24T21:08:51.551677+00:00",
  "counts": {
   "guards": 72,
   "tools": 82,
@@ -10,453 +10,453 @@
   "guards": [
    {
     "name": "analytics-guard",
-    "desc": "."
+    "desc": "Analytics implementation validation, event tracking, and data privacy"
    },
    {
     "name": "api-contract-guard",
-    "desc": ""
+    "desc": "API contract compliance validation between providers and consumers"
    },
    {
     "name": "api-security-guard",
-    "desc": "."
+    "desc": "API security validation - auth, headers, CORS, input validation, error handling, logging"
    },
    {
     "name": "async-guard",
-    "desc": ""
+    "desc": "Async/await pattern validation - proper usage, error handling, cancellation"
    },
    {
     "name": "build-guard",
-    "desc": "."
+    "desc": "Build process validation and compilation safety checks"
    },
    {
     "name": "changelog-guard",
-    "desc": "."
+    "desc": "Changelog format validation and completeness checking"
    },
    {
     "name": "ci-guard",
-    "desc": "."
+    "desc": "CI/CD pipeline configuration validation and optimization"
    },
    {
     "name": "circuit-breaker-guard",
-    "desc": ""
+    "desc": "Circuit breaker pattern validation - thresholds, recovery, fallbacks, monitoring"
    },
    {
     "name": "clean-arch-guard",
-    "desc": ""
+    "desc": "Clean architecture layer dependency validation - entities, use cases, interfaces, infrastructure"
    },
    {
     "name": "clean-code-guard",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED Clean Code Guard with automated code analysis, security scanning,"
    },
    {
     "name": "comment-guard",
-    "desc": ""
+    "desc": "Comment quality validation - meaningful vs noise, stale comments, missing docs"
    },
    {
     "name": "commit-guard",
-    "desc": "."
+    "desc": "Commit message convention validation and changelog generation"
    },
    {
     "name": "concurrency-guard",
-    "desc": "."
+    "desc": "Concurrency/threading safety validation and deadlock detection"
    },
    {
     "name": "config-guard",
-    "desc": "."
+    "desc": "Configuration file validation and best practices"
    },
    {
     "name": "cors-guard",
-    "desc": ""
+    "desc": "CORS configuration validation and security best practices"
    },
    {
     "name": "cqrs-guard",
-    "desc": ""
+    "desc": "CQRS pattern validation - command/query separation, read/write models, separate stores"
    },
    {
     "name": "csrf-guard",
-    "desc": ""
+    "desc": "CSRF protection validation - anti-forgery tokens, same-site cookies, custom headers"
    },
    {
     "name": "css-guard",
-    "desc": "."
+    "desc": "CSS/Sass best practices, specificity management, and performance"
    },
    {
     "name": "cyclomatic-guard",
-    "desc": ""
+    "desc": "Cyclomatic complexity validation - McCabe metrics, refactoring targets"
    },
    {
     "name": "ddd-guard",
-    "desc": ""
+    "desc": "Domain-driven design validation - aggregates, entities, bounded contexts, repositories"
    },
    {
     "name": "dead-code-guard",
-    "desc": ""
+    "desc": "Dead code detection - unused imports, functions, variables, unreachable code"
    },
    {
     "name": "dependency-injection-guard",
-    "desc": "."
+    "desc": "DI/IoC validation - constructor injection, service locator, container setup, captive dependencies"
    },
    {
     "name": "deploy-guard",
-    "desc": "."
+    "desc": "Deployment safety validation and rollback verification"
    },
    {
     "name": "docker-compose-guard",
-    "desc": "."
+    "desc": "Docker Compose validation, service configuration, and networking checks"
    },
    {
     "name": "docker-guard",
-    "desc": "."
+    "desc": "Dockerfile optimization, security best practices, and multi-stage builds"
    },
    {
     "name": "docs-guard",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED Docs Guard with automated documentation analysis, API verification,"
    },
    {
     "name": "duplicate-code-guard",
-    "desc": ""
+    "desc": "Code duplication detection - exact, near-duplicate, DRY principle enforcement"
    },
    {
     "name": "encryption-guard",
-    "desc": ""
+    "desc": "Encryption best practices - algorithm strength, key management, hashing, IV handling"
    },
    {
     "name": "env-check-guard",
-    "desc": "."
+    "desc": "Environment variable validation and security checking"
    },
    {
     "name": "error-handling-guard",
-    "desc": "."
+    "desc": "Error handling patterns and exception safety validation"
    },
    {
     "name": "event-driven-guard",
-    "desc": ""
+    "desc": "Event-driven architecture validation - schema, channels, handlers, idempotency, ordering"
    },
    {
     "name": "event-sourcing-guard",
-    "desc": ""
+    "desc": "Event sourcing pattern validation - event streams, aggregates, snapshots, replay"
    },
    {
     "name": "file-guard",
-    "desc": "."
+    "desc": "File system security, path traversal detection, and permission validation"
    },
    {
     "name": "graceful-shutdown-guard",
-    "desc": ""
+    "desc": "Graceful shutdown validation - signal handling, drain, cleanup, health check on stop"
    },
    {
     "name": "health-check-guard",
-    "desc": ""
+    "desc": "Health check endpoint validation - liveness, readiness, startup probes, dependencies"
    },
    {
     "name": "helm-guard",
-    "desc": "."
+    "desc": "Helm chart validation, template checking, and best practices"
    },
    {
     "name": "hexagonal-guard",
-    "desc": ""
+    "desc": "Hexagonal/ports-and-adapters architecture validation - clean dependency flow"
    },
    {
     "name": "html-guard",
-    "desc": "."
+    "desc": "HTML semantics, accessibility compliance, and best practices"
    },
    {
     "name": "iam-guard",
-    "desc": ""
+    "desc": "IAM policy validation - least privilege, resource constraints, condition blocks"
    },
    {
     "name": "idor-guard",
-    "desc": ""
+    "desc": "Insecure Direct Object Reference detection - authorization checks, predictable IDs, mass assignment"
    },
    {
     "name": "injection-guard",
-    "desc": ""
+    "desc": "Injection prevention validation - OS command, LDAP, XPath, NoSQL, template injection"
    },
    {
     "name": "json-guard",
-    "desc": "."
+    "desc": "JSON schema validation, structure checking, and best practices"
    },
    {
     "name": "jwt-guard",
-    "desc": ""
+    "desc": "JWT implementation validation - token handling, algorithms, security patterns"
    },
    {
     "name": "kubernetes-guard",
-    "desc": "."
+    "desc": "Kubernetes manifest validation, security contexts, and resource limits"
    },
    {
     "name": "large-class-guard",
-    "desc": ""
+    "desc": "Large class detection - single responsibility, cohesion, coupling analysis"
    },
    {
     "name": "logging-pattern-guard",
-    "desc": "."
+    "desc": "Logging patterns - structure, levels, correlation, sensitive data, sampling"
    },
    {
     "name": "long-method-guard",
-    "desc": ""
+    "desc": "Long method detection - extraction opportunities, parameter count, nesting depth"
    },
    {
     "name": "lsp-guard",
-    "desc": "."
+    "desc": "Language Server Protocol auto-detection validation,"
    },
    {
     "name": "markdown-guard",
-    "desc": "."
+    "desc": "Markdown quality, consistency, and formatting checks"
    },
    {
     "name": "message-queue-guard",
-    "desc": ""
+    "desc": "Message queue validation - producers, consumers, reliability, dead letter queues"
    },
    {
     "name": "migration-pattern-guard",
-    "desc": "."
+    "desc": "Database migration validation - versioning, rollback, backward compat, expand-contract"
    },
    {
     "name": "naming-guard",
-    "desc": ""
+    "desc": "Naming convention validation - consistency, readability, anti-patterns"
    },
    {
     "name": "nested-depth-guard",
-    "desc": ""
+    "desc": "Nesting depth validation - conditionals, loops, callback nesting, refactoring targets"
    },
    {
     "name": "observer-pattern-guard",
-    "desc": "."
+    "desc": "Observer/event pattern - subscription, notification, unsubscription, memory leaks"
    },
    {
     "name": "pr-guard",
-    "desc": "."
+    "desc": "Pull request template validation, size checking, and review readiness"
    },
    {
     "name": "python-guard",
-    "desc": "."
+    "desc": "Python best practices, PEP 8 validation, and idiomatic patterns"
    },
    {
     "name": "react-guard",
-    "desc": "."
+    "desc": "React best practices, hooks rules, and component patterns"
    },
    {
     "name": "readme-guard",
-    "desc": "."
+    "desc": "README completeness, installation instructions, and documentation quality"
    },
    {
     "name": "repository-pattern-guard",
-    "desc": "."
+    "desc": "Repository pattern validation - abstraction, interface design, query methods"
    },
    {
     "name": "responsive-guard",
-    "desc": "."
+    "desc": "Responsive design validation, breakpoint checking, and mobile compatibility"
    },
    {
     "name": "retry-guard",
-    "desc": ""
+    "desc": "Retry pattern validation - exponential backoff, jitter, max retries, circuit breaker integration"
    },
    {
     "name": "saga-guard",
-    "desc": ""
+    "desc": "Saga/choreography pattern validation - compensating transactions, step ordering, orchestration"
    },
    {
     "name": "seo-guard",
-    "desc": "."
+    "desc": "SEO validation, meta tags, structured data, and accessibility impact"
    },
    {
     "name": "serialization-guard",
-    "desc": "."
+    "desc": "Serialization/deserialization safety and injection prevention"
    },
    {
     "name": "ssrf-guard",
-    "desc": ""
+    "desc": "Server-side request forgery prevention - URL validation, IP blocking, scheme restrictions"
    },
    {
     "name": "state-guard",
-    "desc": "."
+    "desc": "State management validation and anti-pattern detection"
    },
    {
     "name": "strategy-pattern-guard",
-    "desc": "."
+    "desc": "Strategy pattern validation - interchangeable algorithms, interface, context, registry"
    },
    {
     "name": "terraform-guard",
-    "desc": "."
+    "desc": "Terraform configuration validation, security scanning, and best practices"
    },
    {
     "name": "test-guard",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED Test Guard with automated test analysis, coverage analysis,"
    },
    {
     "name": "typescript-guard",
-    "desc": "."
+    "desc": "TypeScript best practices, strict mode validation, and type safety"
    },
    {
     "name": "xss-guard",
-    "desc": ""
+    "desc": "XSS prevention validation - output encoding, CSP headers, dangerous API detection"
    },
    {
     "name": "yaml-guard",
-    "desc": "."
+    "desc": "YAML validation, formatting consistency, and security checks"
    }
   ],
   "tools": [
    {
     "name": "accessibility-patterns",
-    "desc": ""
+    "desc": "Accessibility patterns - ARIA, keyboard navigation, screen reader, color contrast"
    },
    {
     "name": "alerting-stack",
-    "desc": ""
+    "desc": "Alerting stack - rules, routing, escalation, silencing, runbooks"
    },
    {
     "name": "analytics",
-    "desc": "."
+    "desc": "Analytics implementation, event tracking, dashboards, and user behavior"
    },
    {
     "name": "analytics-setup",
-    "desc": ""
+    "desc": "Analytics implementation - event tracking, taxonomy, dashboards, privacy"
    },
    {
     "name": "api-documentation",
-    "desc": ""
+    "desc": "API documentation - OpenAPI/Swagger spec, docs generation, SDK generation, examples"
    },
    {
     "name": "api-rate-limiting",
-    "desc": ""
+    "desc": "API rate limiting - algorithm selection, headers, throttling, quota management"
    },
    {
     "name": "api-versioning",
-    "desc": ""
+    "desc": "API versioning strategy - URI, header, content negotiation, deprecation"
    },
    {
     "name": "audio-processing",
-    "desc": "."
+    "desc": "Audio processing, speech recognition, and audio transformation"
    },
    {
     "name": "backup-strategy",
-    "desc": ""
+    "desc": "Backup strategy - frequency, retention, offsite, encryption, recovery testing"
    },
    {
     "name": "batch-processing",
-    "desc": "."
+    "desc": "Batch processing workflows, job scheduling, and parallel execution"
    },
    {
     "name": "cache-strategy",
-    "desc": ""
+    "desc": "Cache strategy - TTL, invalidation, warming, hierarchy, distributed patterns"
    },
    {
     "name": "capacity-management",
-    "desc": "."
+    "desc": "Capacity management - forecasting, monitoring, scaling triggers, planning"
    },
    {
     "name": "cdn",
-    "desc": "."
+    "desc": "CDN configuration, edge caching, and content delivery optimization"
    },
    {
     "name": "cdn-strategy",
-    "desc": ""
+    "desc": "CDN strategy - edge caching, origin shield, dynamic acceleration, compression"
    },
    {
     "name": "cicd-pipeline",
-    "desc": ""
+    "desc": "CI/CD pipeline design - stages, gates, caching, optimization, security scanning"
    },
    {
     "name": "component-library",
-    "desc": "."
+    "desc": "Component library management, versioning, and distribution"
    },
    {
     "name": "computer-vision",
-    "desc": "."
+    "desc": "Computer vision, object detection, and image recognition"
    },
    {
     "name": "container-patterns",
-    "desc": "."
+    "desc": "Container/Docker patterns - image optimization, multi-stage, security, layering"
    },
    {
     "name": "content-strategy",
-    "desc": "."
+    "desc": "Content strategy, editorial planning, and content lifecycle management"
    },
    {
     "name": "contract-testing",
-    "desc": ""
+    "desc": "Contract testing - consumer-driven contracts, provider verification, Pact"
    },
    {
     "name": "data-management",
-    "desc": "."
+    "desc": "Data management - lifecycle, classification, governance, quality, lineage, retention"
    },
    {
     "name": "data-quality",
-    "desc": ""
+    "desc": "Data quality framework - validation, monitoring, lineage, remediation, ownership"
    },
    {
     "name": "data-warehouse",
-    "desc": "."
+    "desc": "Data warehouse design, star schema, and query optimization"
    },
    {
     "name": "database-optimization",
-    "desc": ""
+    "desc": "Database optimization - query tuning, indexing, connection management, monitoring"
    },
    {
     "name": "database-scaling",
-    "desc": ""
+    "desc": "Database scaling strategy - read replicas, sharding, partitioning, connection pooling"
    },
    {
     "name": "design-system",
-    "desc": ""
+    "desc": "Design system creation - components, design tokens, documentation, distribution"
    },
    {
     "name": "ecommerce",
-    "desc": "."
+    "desc": "E-commerce platform design, product catalog, cart, and checkout flow"
    },
    {
     "name": "email-systems",
-    "desc": "."
+    "desc": "Email service design, transactional emails, and deliverability"
    },
    {
     "name": "error-boundary-patterns",
-    "desc": ""
+    "desc": "Error boundary patterns - React error boundaries, graceful degradation, recovery"
    },
    {
     "name": "etl",
-    "desc": "."
+    "desc": "ETL pipeline design, data transformation, and workflow orchestration"
    },
    {
     "name": "feature-flag-strategy",
-    "desc": ""
+    "desc": "Feature flag strategy - toggle types, release management, cleanup, monitoring"
    },
    {
     "name": "freebuff-bridge",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED Freebuff Bridge \u2014 Communicate with Freebuff Desktop AI assistant."
    },
    {
     "name": "full-text-search",
-    "desc": "."
+    "desc": "Full-text search implementation, tokenization, and ranking algorithms"
    },
    {
     "name": "graph-database",
-    "desc": "."
+    "desc": "Graph database design, query patterns, and relationship modeling"
    },
    {
     "name": "grpc",
-    "desc": "."
+    "desc": "GRPC API design, protobuf definition, and bidirectional streaming"
    },
    {
     "name": "image-optimization",
-    "desc": ""
+    "desc": "Image optimization - format selection, compression, responsive images, lazy loading"
    },
    {
     "name": "image-processing",
-    "desc": "."
+    "desc": "Image processing pipeline, optimization, and transformation"
    },
    {
     "name": "incident-management",
-    "desc": "."
+    "desc": "Incident management - detection, triage, severity, communication, escalation"
    },
    {
     "name": "index-design",
-    "desc": ""
+    "desc": "Index strategy - B-tree, hash, composite, covering, partial, filtered indexes"
    },
    {
     "name": "information-architecture",
-    "desc": "."
+    "desc": "Information architecture design, navigation patterns, and content organization"
    },
    {
     "name": "input-blocker",
@@ -464,431 +464,431 @@
    },
    {
     "name": "logging-patterns",
-    "desc": ""
+    "desc": "Logging patterns - structured, levels, correlation ID, sampling, context"
    },
    {
     "name": "logging-stack",
-    "desc": ""
+    "desc": "Logging stack design - collection, aggregation, storage, analysis, retention"
    },
    {
     "name": "makefile",
-    "desc": ""
+    "desc": "Makefile best practices - phony targets, variables, dependencies, help"
    },
    {
     "name": "mfa",
-    "desc": "."
+    "desc": "Multi-factor authentication design, TOTP, biometrics, and security keys"
    },
    {
     "name": "microservice-patterns",
-    "desc": "."
+    "desc": "Microservice patterns - bounded context, API gateway, service discovery, database per service"
    },
    {
     "name": "monitoring-stack",
-    "desc": ""
+    "desc": "Monitoring stack design - metrics collection, storage, visualization, alerting"
    },
    {
     "name": "nlp",
-    "desc": "."
+    "desc": "Natural language processing, text analysis, and language models"
    },
    {
     "name": "nosql",
-    "desc": "."
+    "desc": "NoSQL database design, document stores, and key-value patterns"
    },
    {
     "name": "notification",
-    "desc": "."
+    "desc": "Notification system design, push/email/SMS, and delivery preferences"
    },
    {
     "name": "oauth",
-    "desc": "."
+    "desc": "OAuth 2.0 implementation, authorization flows, and token management"
    },
    {
     "name": "payment",
-    "desc": "."
+    "desc": "Payment integration, gateway selection, and PCI compliance"
    },
    {
     "name": "performance-monitoring",
-    "desc": "."
+    "desc": "Performance monitoring setup, RUM, synthetic monitoring, and alerting"
    },
    {
     "name": "performance-optimization",
-    "desc": ""
+    "desc": "Performance optimization - Core Web Vitals, loading, rendering, bundles"
    },
    {
     "name": "protocol-buffers",
-    "desc": "."
+    "desc": "Protocol Buffers design - field numbering, versioning, backward compat, organization"
    },
    {
     "name": "pwa",
-    "desc": "."
+    "desc": "Progressive web app development, service workers, and offline-first architecture"
    },
    {
     "name": "query-optimization",
-    "desc": ""
+    "desc": "Query optimization - execution plans, rewriting, statistics, indexing hints"
    },
    {
     "name": "rbac",
-    "desc": "."
+    "desc": "RBAC/ABAC design, permission modeling, and access control implementation"
    },
    {
     "name": "real-time",
-    "desc": "."
+    "desc": "Real-time system design with WebSockets, SSE, and event-driven architecture"
    },
    {
     "name": "responsive-design",
-    "desc": ""
+    "desc": "Responsive design patterns - breakpoints, fluid layouts, mobile-first, testing"
    },
    {
     "name": "rest-api",
-    "desc": "."
+    "desc": "REST API design, resource modeling, and HATEOAS principles"
    },
    {
     "name": "scrcpy-install",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED Scrcpy Install & Usage \u2014 Android screen mirroring via ADB."
    },
    {
     "name": "search-engine",
-    "desc": "."
+    "desc": "Search engine integration, indexing strategy, and relevance tuning"
    },
    {
     "name": "seo-optimization",
-    "desc": ""
+    "desc": "SEO optimization - technical SEO, content, structured data, performance, meta tags"
    },
    {
     "name": "serverless-patterns",
-    "desc": "."
+    "desc": "Serverless patterns - function design, cold start, event sources, error handling"
    },
    {
     "name": "service-mesh",
-    "desc": "."
+    "desc": "Service mesh - sidecar, mTLS, traffic routing, observability, security policies"
    },
    {
     "name": "shell-scripting",
-    "desc": ""
+    "desc": "Shell scripting best practices - error handling, portability, security, quoting"
    },
    {
     "name": "skill-generator-tool",
-    "desc": "ULTRA-ADVANCED Batch Skill Generator \u2014 creates, improves, and manages AI coding "
+    "desc": "Creates, improves, and manages AI coding agent skill files at scale. Commands: list, create, improve"
    },
    {
     "name": "sso",
-    "desc": "."
+    "desc": "Single sign-on implementation, SAML/OIDC integration, and federation"
    },
    {
     "name": "state-management",
-    "desc": ""
+    "desc": "State management patterns - Redux, Context, signals, proper immutability"
    },
    {
     "name": "static-sites",
-    "desc": "."
+    "desc": "Static site generation, SSG frameworks, and build optimization"
    },
    {
     "name": "streaming",
-    "desc": "."
+    "desc": "Streaming data processing with Kafka, Flink, and event pipelines"
    },
    {
     "name": "terabox-integration",
-    "desc": ""
+    "desc": "Cloud storage operations via browser automation and API"
    },
    {
     "name": "testing-pyramid",
-    "desc": ""
+    "desc": "Testing pyramid strategy - unit, integration, e2e distribution, coverage goals"
    },
    {
     "name": "time-series",
-    "desc": "."
+    "desc": "Time series data management, forecasting, and anomaly detection"
    },
    {
     "name": "tracing-stack",
-    "desc": ""
+    "desc": "Distributed tracing - OpenTelemetry, instrumentation, sampling, correlation"
    },
    {
     "name": "vector-database",
-    "desc": "."
+    "desc": "Vector database integration, embedding strategies, and similarity search"
    },
    {
     "name": "video-processing",
-    "desc": "l"
+    "desc": "Video processing, transcoding, streaming, and optimization."
    },
    {
     "name": "webhooks",
-    "desc": "."
+    "desc": "Webhook management, delivery guarantees, and payload verification"
    },
    {
     "name": "websockets",
-    "desc": "."
+    "desc": "WebSocket management, real-time communication, and connection handling"
    },
    {
     "name": "windows-shortcut-repair",
-    "desc": "ULTRA-ADVANCED Windows Shortcut Repair \u2014 GUI + CLI with monitoring, export, back"
+    "desc": "ULTRA-ADVANCED Windows Shortcut Repair \u2014 GUI + CLI with monitoring, export, backup, and scheduled ta"
    },
    {
     "name": "zero-downtime-deployment",
-    "desc": ""
+    "desc": "Zero-downtime deployment - rolling, blue-green, canary, migration patterns"
    }
   ],
   "workflow": [
    {
     "name": "a-b-testing",
-    "desc": "."
+    "desc": "A/B testing design, statistical significance, and experiment analysis"
    },
    {
     "name": "acceptance-testing",
-    "desc": ""
+    "desc": "Acceptance testing workflow - criteria definition, UAT, automation, sign-off process"
    },
    {
     "name": "api-design-workflow",
-    "desc": ""
+    "desc": "API design workflow - contract-first, resource modeling, versioning, documentation"
    },
    {
     "name": "architecture-decision-record",
-    "desc": "."
+    "desc": "ADR creation, review, and management workflow"
    },
    {
     "name": "atdd",
-    "desc": ""
+    "desc": "Acceptance Test Driven Development - collaboration, automation, executable specifications"
    },
    {
     "name": "backlog-grooming",
-    "desc": "."
+    "desc": "Backlog refinement, prioritization frameworks, and user story mapping"
    },
    {
     "name": "bdd-workflow",
-    "desc": ""
+    "desc": "BDD workflow - Gherkin feature files, scenario structure, step definitions"
    },
    {
     "name": "changelog",
-    "desc": "."
+    "desc": "Changelog management workflow with automated generation and release notes"
    },
    {
     "name": "chaos-engineering-workflow",
-    "desc": ""
+    "desc": "Chaos engineering - experiments, steady-state hypothesis, blast radius control"
    },
    {
     "name": "code-migration",
-    "desc": "."
+    "desc": "Code migration workflow with compatibility analysis and rollback planning"
    },
    {
     "name": "code-review-workflow",
-    "desc": ""
+    "desc": "Code review process - review types, checklists, feedback patterns, turnaround time"
    },
    {
     "name": "compliance",
-    "desc": "."
+    "desc": "Compliance validation workflow, regulatory checking, and audit preparation"
    },
    {
     "name": "continuous-improvement",
-    "desc": ""
+    "desc": "Continuous improvement workflow - metrics, experiments, kaizen culture, feedback loops"
    },
    {
     "name": "cost-optimization",
-    "desc": "."
+    "desc": "Cost optimization analysis, resource right-sizing, and waste reduction"
    },
    {
     "name": "data-migration",
-    "desc": "."
+    "desc": "Data migration workflow with validation, rollback, and zero-downtime strategies"
    },
    {
     "name": "data-pipeline-workflow",
-    "desc": ""
+    "desc": "Data pipeline workflow - ingestion, transformation, validation, monitoring, lineage"
    },
    {
     "name": "database-design-workflow",
-    "desc": ""
+    "desc": "Database design workflow - schema modeling, normalization, indexing strategy"
    },
    {
     "name": "database-migration-workflow",
-    "desc": ""
+    "desc": "Database migration workflow - expand-migrate-contract, rollback, zero-downtime strategies"
    },
    {
     "name": "decision-log",
-    "desc": "."
+    "desc": "Decision log - ADR format, rationale, alternatives, impact, review"
    },
    {
     "name": "definition-of-done",
-    "desc": "."
+    "desc": "Definition of Done - quality gates, verification, team agreement, enforcement"
    },
    {
     "name": "dependency-update",
-    "desc": "."
+    "desc": "Dependency update workflow, breaking change analysis, and automation"
    },
    {
     "name": "diagnose",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED Diagnose skill with systematic debugging, root cause analysis,"
    },
    {
     "name": "disaster-recovery",
-    "desc": "."
+    "desc": "Disaster recovery planning, backup strategy, and recovery testing"
    },
    {
     "name": "documentation-as-code",
-    "desc": "."
+    "desc": "Documentation as code workflow with automated building and deployment"
    },
    {
     "name": "estimation",
-    "desc": "."
+    "desc": "Story/task estimation techniques, planning poker, and effort sizing"
    },
    {
     "name": "event-storming",
-    "desc": ""
+    "desc": "Event storming workshop - domain exploration, bounded context discovery, timeline ordering"
    },
    {
     "name": "example-mapping",
-    "desc": ""
+    "desc": "Example mapping workshop - rules, examples, questions, acceptance criteria definition"
    },
    {
     "name": "exploratory-testing",
-    "desc": ""
+    "desc": "Exploratory testing - charters, session notes, timeboxed discovery, debrief"
    },
    {
     "name": "grill-me",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED Grill Me skill with systematic questioning, decision tree analysis,"
    },
    {
     "name": "handoff",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED Handoff skill with comprehensive context preservation,"
    },
    {
     "name": "impact-mapping",
-    "desc": ""
+    "desc": "Impact mapping - strategic planning, feature prioritization, assumption validation"
    },
    {
     "name": "incident-postmortem",
-    "desc": "."
+    "desc": "Blameless post-mortem facilitation, root cause analysis, and action tracking"
    },
    {
     "name": "incident-response-workflow",
-    "desc": ""
+    "desc": "Incident response workflow - detection, triage, mitigation, post-mortem, action items"
    },
    {
     "name": "load-testing",
-    "desc": "."
+    "desc": "Load testing strategy, tool selection, and performance benchmarking"
    },
    {
     "name": "localization",
-    "desc": "."
+    "desc": "Localization workflow, translation management, and i18n integration"
    },
    {
     "name": "ml-pipeline-workflow",
-    "desc": ""
+    "desc": "ML pipeline workflow - data prep, training, evaluation, deployment, monitoring"
    },
    {
     "name": "pair-programming",
-    "desc": ""
+    "desc": "Pair programming workflow - driver/navigator roles, rotation timing, collaboration patterns"
    },
    {
     "name": "pdf-ocr",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED PDF OCR Skill \u2014 Content stream scaling approach that produces"
    },
    {
     "name": "performance-audit",
-    "desc": "."
+    "desc": "Performance audit - profiling, baseline, bottlenecks, load testing, regression"
    },
    {
     "name": "performance-budget",
-    "desc": "."
+    "desc": "Performance budget creation, monitoring, and enforcement"
    },
    {
     "name": "performance-testing-workflow",
-    "desc": ""
+    "desc": "Performance testing workflow - plan, script, execute, analyze, baseline comparison"
    },
    {
     "name": "refactoring-workflow",
-    "desc": "."
+    "desc": "Refactoring workflow - code smells, safe steps, test coverage, incremental improvement"
    },
    {
     "name": "release-notes",
-    "desc": "."
+    "desc": "Release notes creation with automated summaries and stakeholder communication"
    },
    {
     "name": "requirements-gathering",
-    "desc": "."
+    "desc": "Requirements gathering - stakeholder interviews, user stories, non-functional, prioritization"
    },
    {
     "name": "retrospective",
-    "desc": "."
+    "desc": "Sprint retrospective facilitation with multiple formats and action tracking"
    },
    {
     "name": "runbook",
-    "desc": "."
+    "desc": "Runbook creation, incident response procedures, and automation"
    },
    {
     "name": "secrets-management",
-    "desc": "."
+    "desc": "Secrets management workflow, rotation strategies, and vault integration"
    },
    {
     "name": "secrets-rotation-workflow",
-    "desc": ""
+    "desc": "Secrets rotation workflow - lifecycle management, automation, emergency procedures"
    },
    {
     "name": "security-review",
-    "desc": "."
+    "desc": "Security review workflow, threat modeling, and vulnerability assessment"
    },
    {
     "name": "security-testing-workflow",
-    "desc": ""
+    "desc": "Security testing workflow - SAST, DAST, penetration testing, dependency scanning"
    },
    {
     "name": "semantic-versioning",
-    "desc": "."
+    "desc": "Semantic versioning workflow with breaking change detection and automation"
    },
    {
     "name": "specification-by-example",
-    "desc": ""
+    "desc": "Specification by Example - living documentation, executable specs, collaborative refinement"
    },
    {
     "name": "sprint-planning",
-    "desc": "."
+    "desc": "Sprint planning workflow with capacity-based commitment and task breakdown"
    },
    {
     "name": "story-splitting",
-    "desc": "."
+    "desc": "User story splitting - vertical slicing, SPIDR, independent value, INVEST"
    },
    {
     "name": "tdd",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED Test-Driven Development with systematic red-green-refactor,"
    },
    {
     "name": "technical-debt",
-    "desc": "."
+    "desc": "Technical debt identification, quantification, and management strategy"
    },
    {
     "name": "technical-specification",
-    "desc": "."
+    "desc": "Technical specification - architecture decisions, API contracts, data model, security review"
    },
    {
     "name": "terabox-improvement",
-    "desc": ""
+    "desc": "Analyze and optimize TeraBox integration workflows"
    },
    {
     "name": "usability-testing",
-    "desc": "."
+    "desc": "Usability testing workflow, test script creation, and results analysis"
    },
    {
     "name": "user-research",
-    "desc": "."
+    "desc": "User research planning, interview techniques, and synthesis methods"
    },
    {
     "name": "user-story-mapping",
-    "desc": ""
+    "desc": "User story mapping - backlog organization, release slicing, persona workflow discovery"
    },
    {
     "name": "value-stream-mapping",
-    "desc": ""
+    "desc": "Value stream mapping - process optimization, waste identification, cycle time analysis"
    },
    {
     "name": "zoom-out",
-    "desc": "."
+    "desc": "ULTRA-ADVANCED Zoom Out skill with comprehensive architecture analysis,"
    }
   ],
   "special": [
    {
     "name": "desktop-control-mcp",
-    "desc": "Enhanced Desktop Control MCP Server for advanced Windows PC control with AI/ML i"
+    "desc": "Enhanced Desktop Control MCP Server for advanced Windows PC control with AI/ML integration, enterpri"
    },
    {
     "name": "force-delete",
-    "desc": "Automates the removal of protected directories that throw **\"Access is denied\"**"
+    "desc": "Automates the removal of protected directories that throw **\"Access is denied\"** by: - Taking owners"
    },
    {
     "name": "self-learning",

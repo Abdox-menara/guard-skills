@@ -107,3 +107,11 @@ class UserStoryMapping:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [example-mapping](../example-mapping/SKILL.md)
+- [impact-mapping](../impact-mapping/SKILL.md)
+- [story-splitting](../story-splitting/SKILL.md)
+- [user-research](../user-research/SKILL.md)
+- [value-stream-mapping](../value-stream-mapping/SKILL.md)

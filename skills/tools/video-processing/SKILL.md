@@ -1085,3 +1085,9 @@ function Optimize-VideoForWeb {
 **Version**: 2.1.0
 **Status**: PRODUCTION READY
 **Requires**: FFmpeg 6.0+, FFprobe
+
+## See Also
+
+- [audio-processing](../audio-processing/SKILL.md)
+- [batch-processing](../batch-processing/SKILL.md)
+- [image-processing](../image-processing/SKILL.md)

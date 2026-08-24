@@ -48,3 +48,7 @@ Semantic versioning workflow with breaking change detection and automation
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [api-versioning](../../tools/api-versioning/SKILL.md)

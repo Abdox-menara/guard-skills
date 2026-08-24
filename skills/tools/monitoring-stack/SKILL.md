@@ -107,3 +107,7 @@ class MonitoringStack:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [performance-monitoring](../performance-monitoring/SKILL.md)

@@ -48,3 +48,7 @@ User research planning, interview techniques, and synthesis methods
 
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
+
+## See Also
+
+- [user-story-mapping](../user-story-mapping/SKILL.md)

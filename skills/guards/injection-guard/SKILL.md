@@ -107,3 +107,7 @@ class InjectionGuard:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [dependency-injection-guard](../dependency-injection-guard/SKILL.md)

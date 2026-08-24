@@ -107,3 +107,8 @@ class SpecificationByExample:
 **Version**: 1.0.0
 **Status**: PRODUCTION READY
 **Total Patterns**: 5
+
+## See Also
+
+- [example-mapping](../example-mapping/SKILL.md)
+- [technical-specification](../technical-specification/SKILL.md)
