@@ -24,11 +24,10 @@ __pycache__/
 *.log
 .hermes-tmp*
 
-# Test artifacts
-*.xlsx
-*.png
-*.html
+# Test artifacts (scoped — never block skill assets globally)
 test-sample/
+test-output/
+**/scratch/
 
 # Playwright logs
 .playwright-mcp/
@@ -62,8 +61,6 @@ knowledge_base_v2.json
 skills/skills_data.json
 notes_content.txt
 opencode_notes.md
-test*.txt
-test*.md
 settings.ini
 drive_composer.ico
 .pi/

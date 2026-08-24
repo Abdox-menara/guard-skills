@@ -1,0 +1,35 @@
+name: Validate Skills
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skills/**"
+      - "tools/**"
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate SKILL.md files
+        run: python tools/validate_skills.py
+
+      - name: Secret scan
+        run: python tools/secret_scan.py
+
+      - name: Rebuild index (drift check)
+        run: |
+          python tools/build_index.py
+          git diff --exit-code skills_index.json || (
+            echo "::error::skills_index.json out of sync with skills/ — run tools/build_index.py and commit"
+            exit 1
+          )
