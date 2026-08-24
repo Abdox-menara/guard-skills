@@ -458,6 +458,15 @@
 - Excluded idm/ (416MB Rust project, own-repo candidate); old guard-skills.git deletable later
 - **Outcome**: Library fully version-controlled; chkdsk /f still recommended (admin)
 
+### Session 2026-08-23 (D: Drive Rescue — 152 GB Freed)
+- D: was critical (12.1 GB free of 474). Root cause: 3 stacked Desktop backups in `D:\A` (stale Jul-14 copy 160 GB, semi Aug-17 151 GB, current root 77 GB)
+- Diffed all 3 trees by rel-path+size: stale had 145 GB uniques, NOT mostly duplicates
+- **Moved to H:** `H:\Recovered\API-SFO` 59.3 GB (incl. 2×20GB OneDrive zips — one known corrupt, user to review) + `H:\Recovered\installers` 33.7 GB (STEP7 V17×2/V19 ISOs, Vijeo Designer, ECOSTRUCTURE.zip, Eplan.rar — the "missing" OneDrive downloads were here all along)
+- **Preserved on D:** big unique folders (disktop 19.6G, new folder(3) 14.1G, phone 6.8G, OneDrive fixed zip 10.6G) → instant same-volume move to `D:\Desktop_Sync\_recovered_stale_20260823\` (H: lacked space; upload to TeraBox later)
+- **Deleted:** entire stale tree + 11,157 dup files (44 GB) from semi copy — 0 errors; semi keeps its 15,674 uniques (106.8 GB)
+- **Result**: D: 12.1 → **164.3 GB free**; H: 116.5 → 23.2 GB; chkdsk /f on C: still pending
+- **Outcome**: D: crisis resolved, API SFO mystery solved
+
 ### Session 2026-08-23 (Input Blocker v68+v69 + Deep Audit + Purge)
 - Deep 2-layer analysis of H:\ai\Input Blocker (3.24 GB, v3-v67): reports in reports\ (Folder_Analysis + Deep_Technical docx)
 - Found: fake PQ-crypto shims (v62), NavItem ghost-text bug, 0 tests on v58 security modules, production crash traces
@@ -467,6 +476,34 @@
 - Workspace convention confirmed: true source lives H:\freebuff\Project\iblocker-vNN (v63 held v67 code); mirrored to H:\ai\Input Blocker\versions\vNN
 - **Purge**: build\ deleted (829 MB freed); 1,046 MB old EXEs consolidated to _archive_pre_v69\ (user may delete later); root .lnk clutter 31->0; kept lineage v64-v69 + v52.1 (~404 MB)
 - **Outcome**: v69.exe live via desktop shortcut; chkdsk /f still pending; user must manually verify Hello biometrics
+
+### Session 2026-08-23 (AndroidDex Install + OpenDex Alternative)
+- Installed AndroidDex.apk (com.shrey.androiddex v1.0.1) on MNA-LX9 via adb — Huawei multi-user quirk: install landed on Guest (user 10); fixed with `cmd package install-existing --user 0`
+- AndroidDex identified: Flutter Windows + scrcpy wrapper (DeX-style phone mirroring), closed source, at H:\Downloads\Compressed\pre_build_Android_Dex_Windows\
+- Built **OpenDex** alternative: C:\opencodes\opendex\opendex.py (Python 3.11 tkinter, ~490 lines, zero deps) wrapping scrcpy 3.1 (C:\other\scrcpy-win64-v3.1) + adb (C:\Android\platform-tools)
+- Features: device auto-detect (2.5s poll), Wi-Fi connect/pair, Use-USB-IP, mirror+control, fullscreen/ontop/borderless/no-audio/stay-awake/show-touches/screen-off, size/bitrate/fps/codec, screenshot, MP4/MKV recording, live log
+- Verified live: mirror session on MNA-LX9 (direct3d, 864x1920); desktop shortcut OpenDex.lnk created
+- **Outcome**: OpenDex running; scrcpy is the engine (true protocol rebuild not attempted)
+
+### Session 2026-08-24 (OpenDex v2 — Better than AndroidDex)
+- User rejected v1 ("I DO NOT LIKE") → rebuilt as OpenDex v2, feature-superior to AndroidDex
+- Upgraded engine: scrcpy 4.1 downloaded to C:\other\scrcpy-win64-v4.1 (10.8 MB, from GitHub releases); v3.1 kept
+- **Critical quirk**: scrcpy's bundled adb kills the platform-tools adb server ("Could not find any ADB device") — fix: pass `ADB=C:\Android\platform-tools\adb.exe` env var to scrcpy child processes
+- v2 modes: DeX Desktop (--new-display, verified connecting on MNA-LX9), Phone Mirror, Record Only (--no-window), Camera (--video-source=camera), OTG Control (--otg --hid-keyboard --hid-mouse)
+- v2 features: app launcher (pm list -3 + monkey/am --display fallback), DeX --start-app field, APK installer (--user 0 first for Huawei quirk), push/pull files, battery %, multi-device sessions, auto Wi-Fi reconnect (config.json in %LOCALAPPDATA%\OpenDex)
+- scrcpy 4.1 flags verified: --start-app, --new-display, --otg, --video-source, --no-window all present
+- ghost MCP died mid-session → bash+pwsh fallback used (write .ps1 to temp, run via pwsh -File; inline nested quotes break)
+- **Outcome**: OpenDex v2 running (pythonw); phone was unplugged at finish — DeX mode needs live test on reconnect
+
+### Session 2026-08-24 (OpenDex v2.1 — DeX Verified Working)
+- DeX mode VERIFIED LIVE on MNA-LX9: `--new-display=1920x1080` created virtual display **id=8**; YouTube launched via `am start --display 8` renders in a **freeform window with desktop controls** — true DeX experience
+- **Keyguard blocks the DeX display** (shows lock screen) — phone must be unlocked for desktop to appear; `wm dismiss-keyguard` insufficient with PIN
+- DeX prep settings applied: enable_freeform_support=1, force_desktop_mode_on_external_displays=1, force_resizable_activities=1
+- Huawei PC Mode components exist (com.huawei.desktop.systemui ImitateActivity + desktop.explorer) but launch blocked by `com.huawei.desktop.systemui.permission.SELF` — cannot trigger via adb
+- `cmd wallpaper` not implemented on EMUI 12 — wallpaper via SET_WALLPAPER intent (one tap)
+- **v2.1**: added Prepare DeX button (wake+keyguard+3 settings), auto-prepare on DeX session start, Wallpaper picker button, multi-pattern display-id detection (mDisplayId=/Display #/Display id=/DisplayId=)
+- ghost MCP died → full bash+pwsh fallback session; window capture via PrintWindow PW_RENDERFULLCONTENT=2 works on occluded scrcpy windows
+- **Outcome**: OpenDex v2.1 live (pythonw 15648) + DeX session live (scrcpy 19380); OpenDex now feature-superior to AndroidDex (DeX desktop + mirror + record-only + camera + OTG + app launcher + APK install + push/pull + multi-device + auto-reconnect)
 ### Top Repos by Stars
 | Stars | Repo | Lesson |
 |-------|------|--------|
