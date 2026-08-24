@@ -11,6 +11,15 @@
 ⚠️ #63 UnityProTemp locked (0 MB, ignore) · ⏳ #27 zips await user verdict
 **Next up:** #26 chkdsk (admin+reboot) · #51 TeraBox upload (~51 GB) · #57 H: recovery plan · #53 semi-uniques merge
 
+**Session 2026-08-23 (3) — Repo batch DONE:**
+✅ #5 deprecations — none exist beyond stubs already removed in #4
+✅ #9 CI workflow `.github/workflows/validate.yml` — validate + secret scan + index drift check on push/PR
+✅ #21 stale branches — only main exists, nothing to prune
+✅ #22 CHANGELOG.md generated from git history
+✅ #23 .gitignore fixed — removed global *.png/*.html/*.xlsx/test*.md blocks; 6 legit skill reference docs now tracked
+✅ #16 tagged **v1.0.0** (220 skills) and pushed
+⚠️ NTFS lock blocked 14 junk-file deletes → force-delete method cleared all; junk accidentally swept into bd4de21 was removed in 2f3f4dd
+
 **Session 2026-08-23 (2) — #4 DONE:** Dedup analysis executed. Findings: 0 exact-duplicate bodies in 222 skills; dedupe_report.json pairs were template false-positives. Real issue = 5 trigger collisions (identical phrases, stub vs rich twin). Merged: deleted 5 skeleton stubs (tools/seo, workflow/api-design, chaos-engineering, database-design, feature-flags), kept rich twins. Library: **225 → 220** (72G/82T/63W/3S). NTFS lock hit during delete — force-delete method worked. Commit `99fbc12` pushed ✅
 
 ## A. Guard Skills Repo (25)
