@@ -20,6 +20,14 @@
 ✅ #16 tagged **v1.0.0** (220 skills) and pushed
 ⚠️ NTFS lock blocked 14 junk-file deletes → force-delete method cleared all; junk accidentally swept into bd4de21 was removed in 2f3f4dd
 
+**Session 2026-08-23 (4) — Content batch DONE:**
+✅ #11 Purpose fields — root cause was greedy regex in build_index.py parse_skill (left "." fragments); fixed parser, now 220/220 populated
+✅ #24 Authoring guide — README section with frontmatter rules + validator commands
+✅ #18 Cross-links — See Also on 86 skills via topic-family script (same-cat ../name, cross-cat ../../cat/name); 0 broken links verified
+✅ #10 partial — added TRIGGER PHRASES to input-blocker + skill-generator-tool; remaining 37 shared phrases = intentional topic families (documented)
+✅ #13 consistency report — p50=109 lines, max=video-processing(1093), 2 bare skills fixed
+Commit `5757bab` pushed ✅
+
 **Session 2026-08-23 (2) — #4 DONE:** Dedup analysis executed. Findings: 0 exact-duplicate bodies in 222 skills; dedupe_report.json pairs were template false-positives. Real issue = 5 trigger collisions (identical phrases, stub vs rich twin). Merged: deleted 5 skeleton stubs (tools/seo, workflow/api-design, chaos-engineering, database-design, feature-flags), kept rich twins. Library: **225 → 220** (72G/82T/63W/3S). NTFS lock hit during delete — force-delete method worked. Commit `99fbc12` pushed ✅
 
 ## A. Guard Skills Repo (25)
