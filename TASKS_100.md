@@ -3,6 +3,15 @@
 > Generated from verified system state + project memory. Check off as completed.
 > Legend: [P1] urgent/high · [P2] valuable · [P3] nice-to-have · [A] automatable by agent
 
+## PROGRESS LOG
+**Session 2026-08-23 — 14 done:**
+✅ #1 validate (225/225 clean) · ✅ #2 secret scan (0 secrets) · ✅ #3 index sync (225)
+✅ #6+#8 committed+pushed `5ed07de` · ✅ #28 TEMP audited (8.7 GB active files remain)
+✅ #31 Recycle emptied (**C: +18 GB**) · ✅ #33 Defender healthy · ✅ #34 startup flagged (NeatDM, Wondershare×2)
+✅ #40 event log OK · ✅ #50 battery report generated · ✅ #59 task Ready · ✅ #62 junk folders purged
+⚠️ #63 UnityProTemp locked (0 MB, ignore) · ⏳ #27 zips await user verdict
+**Next up:** #26 chkdsk (admin+reboot) · #51 TeraBox upload (~51 GB) · #57 H: recovery plan · #53 semi-uniques merge
+
 ## A. Guard Skills Repo (25)
 1. [P1][A] Run validate_skills.py — full library validation
 2. [P1][A] Run secret_scan.py — no leaked keys in 225 skills

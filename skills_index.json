@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-23T19:17:38.707399+00:00",
+ "generated": "2026-08-24T20:48:57.742307+00:00",
  "counts": {
   "guards": 72,
-  "tools": 83,
-  "workflow": 67,
+  "tools": 82,
+  "workflow": 63,
   "special": 3
  },
  "index": {
@@ -551,10 +551,6 @@
     "desc": "."
    },
    {
-    "name": "seo",
-    "desc": "."
-   },
-   {
     "name": "seo-optimization",
     "desc": ""
    },
@@ -641,10 +637,6 @@
     "desc": ""
    },
    {
-    "name": "api-design",
-    "desc": "."
-   },
-   {
     "name": "api-design-workflow",
     "desc": ""
    },
@@ -666,10 +658,6 @@
    },
    {
     "name": "changelog",
-    "desc": "."
-   },
-   {
-    "name": "chaos-engineering",
     "desc": "."
    },
    {
@@ -703,10 +691,6 @@
    {
     "name": "data-pipeline-workflow",
     "desc": ""
-   },
-   {
-    "name": "database-design",
-    "desc": "."
    },
    {
     "name": "database-design-workflow",
@@ -755,10 +739,6 @@
    {
     "name": "exploratory-testing",
     "desc": ""
-   },
-   {
-    "name": "feature-flags",
-    "desc": "."
    },
    {
     "name": "grill-me",
