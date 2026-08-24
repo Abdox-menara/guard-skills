@@ -151,3 +151,8 @@ Commit `5757bab` pushed ✅
 98. [P3][A] Clipboard history enable/configure
 99. [P3][A] Night light + display calibration check
 100. [P3][A] Create restore point before major changes
+
+**Session 2026-08-23 (6) - Projects+Memory batch DONE:**
+- #68 OpenDex packaged: dist\OpenDex.exe 10.5 MB (onefile, windowed, custom icon), smoke-tested OK (NTFS lock on stub cleared via force-delete, rebuild succeeded)
+- #81 knowledge_base_v2.json: sessions 17->19, learnings l022-l024, counts synced to 220
+- #82 HANDOFF.md rewritten for next session (pending: chkdsk, V18 ISO concat, user verdicts, TeraBox upload)

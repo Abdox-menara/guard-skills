@@ -1,41 +1,40 @@
-# Handoff: Library Automation + Truth Sync — 2026-08-23
+# Handoff: 100-Task Program Progress — 2026-08-24
 
 ## Session Context
-- **Session ID**: automation-truth-sync-2026-08-23
-- **Timestamp**: 2026-08-23T02:00:00+01:00
+- **Session ID**: tasks100-content-batch-2026-08-24
 - **Agent**: opencode (ox-alpha)
-- **Project**: Guard Skills — `C:\opencodes\guard skills`
+- **Project**: Guard Skills - `C:\opencodes\guard skills`
+- **Task tracker**: `TASKS_100.md` (32/100 done, progress log at top)
 
 ## Current Verified State
 
-### Skills Library (TRUE counts, auto-generated)
-- **225 skills total** = 72 guards + 83 tools + 67 workflow + 3 special
-  - Special (top-level): `desktop-control-mcp`, `force-delete`, `self-learning`
-- 224 SKILL.md files on disk; `skill-generator-tool` SKILL.md was missing → created this session
-- `meta-skill-generator` was an EMPTY dir → removed from indexes (dir itself NTFS-locked on disk)
-- All 225 validated: frontmatter ✓ descriptions ✓ relative links ✓ (run `python tools/validate_skills.py`)
+### Skills Library
+- **220 skills** = 72 guards + 82 tools + 63 workflow + 3 special
+  - Dedup merge removed 5 skeleton stubs (seo, api-design, chaos-engineering, database-design, feature-flags) — richer twins kept
+- All validated: frontmatter ✅ descriptions ✅ links ✅ secrets ✅ (`python tools/validate_skills.py`)
+- **Index parser fixed**: build_index.py now populates Purpose 220/220 (was greedy-regex bug leaving ".")
+- See Also cross-links on 86 skills; trigger phrases added to input-blocker + skill-generator-tool
 
 ### Git / GitHub
-- Repo: **github.com/Abdox-menara/guard-skills** (public, secret-scanned clean)
-- Git DB relocated: `.git` is a FILE pointing to `C:\Users\Abdox\.opencode_git_storage\guard-skills-clean.git`
-- Old gitdir `guard-skills.git` purged except ~627 NTFS-locked objects (~0.8 MB) — clear after chkdsk
-- Backups: weekly bundle to `H:\Backups\` (auto-pruned to last 4) + GitHub remote
+- Repo: github.com/Abdox-menara/guard-skills — HEAD `ceb3923`, all pushed
+- Tag **v1.0.0** on release commit; CHANGELOG.md generated
+- CI: `.github/workflows/validate.yml` (validate + secret scan + index drift check) — runs on push/PR
+- .gitignore de-globalized (*.png/*.html/*.xlsx/test*.md) — 6 legit reference docs now tracked
 
-### Automation (NEW this session)
-| Component | Path | Purpose |
-|-----------|------|---------|
-| Index generator | `tools/build_index.py` | Regenerates AGENTS.md §4 index + `skills_index.json` from frontmatter |
-| Validator | `tools/validate_skills.py` | Frontmatter/description/link checks (exit 1 on failure) |
-| Secret scanner | `tools/secret_scan.py` | Scans tracked files for credential patterns |
-| Maintenance | `scripts/maintain.ps1` | index → validate → secret-scan → commit+push → bundle |
-| Scheduled task | **GuardSkills-Maintenance** | Weekly Sunday 20:00, runs maintain.ps1 |
+## Pending / Next Actions
+1. **chkdsk C: /f /r** — NTFS corruption still active (blocks deletes/renames at C:\opencodes; git rm fails "Invalid argument"). Needs admin + reboot. Workaround in use: takeown/A + icacls grant + .NET Delete.
+2. **Concat TIA Portal V18 DVD2 + StartDrive V18 ISOs** — split .P1/.P2 parts in `D:\Terabox\+a Drive` (~12 GB); verify_parts.ps1 exists there
+3. **User verdicts needed**: two 20 GB OneDrive zips in `H:\Recovered\API-SFO` (one known corrupt); Input Blocker v69 Windows Hello manual test
+4. **TeraBox upload**: `D:\Desktop_Sync\_recovered_stale_20260823` (~51 GB) → cloud, then delete local
+5. **OpenDex PyInstaller build** was started this session — check `C:\opencodes\opendex\dist\OpenDex.exe`; icon at opendex.ico
+6. Remaining task tracks: storage (#53 semi-uniques merge, #57 H: recovery), projects (#66/67/70 OpenDex polish, Input Blocker v70), memory (#83 mojibake fix)
 
-## Pending (requires user action)
-1. **REBOOT** → chkdsk C: /F /X runs (scheduled) — fixes the NTFS create-ok/delete-blocked corruption that caused today's git object failures
-2. After reboot: delete leftover `C:\Users\Abdox\.opencode_git_storage\guard-skills.git` remnants + locked junk files (`skills/gen*.py`, `generate_skills.py`, `skills/workflow/meta-skill-generator/`)
-3. Re-run `python tools/build_index.py && python tools/validate_skills.py` to confirm clean state post-chkdsk
+## Key Learnings This Session (full list in knowledge_base_v2.json)
+- l022: greedy regex + re.S backtracks parsers to '.' — always verify output count == file count
+- l023: force-delete chain (takeown/icacls/.NET) clears NTFS locks without admin
+- l024: cross-link depth ../ same-cat, ../../ different-cat
 
-## Key Learnings (this session)
-- **l020**: NTFS-locked files → `icacls /grant:r user:F /T` then .NET File.Delete (Remove-Item fails in NonInteractive)
-- **l021**: On corrupted volumes where delete/rename is blocked but create works: `git repack -a -d` → fresh separate-git-dir from pack+refs → rewrite `.git` pointer via `Set-Content -Force`
-- gh CLI fails on `.git` file pointers — use manual `git remote add` + `git push`
+## Recovery / Safety
+- Config backups: `H:\Backups\opencode-config\`, `H:\Backups\ghost-memory-v7-backup.json`
+- Weekly bundle: `H:\Backups\guard-skills-*.bundle` (last: 2026-08-23, auto-pruned to 4)
+- Restore opencode config: `Copy-Item C:\opencodes\opencode.jsonc.STABLE C:\opencodes\opencode.jsonc -Force`

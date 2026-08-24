@@ -515,6 +515,12 @@
 - Duplicate scrcpy sessions caused by external kills + GUI watchdog resurrect — always kill pythonw first when doing external scrcpy work
 - Display id per session: 8→3→5→9→10 (always re-detect, never hardcode)
 - **Outcome**: OpenDex = full AndroidDex replacement + more (DeX desktop w/ taskbar, mirror, record-only, camera, OTG, app launcher, APK install, push/pull, multi-device, watchdog, adb self-heal). Desktop wallpaper on DeX display is black — cosmetic, set via Wallpaper button
+
+### Session 2026-08-24 (OpenDex v2.3 — Advanced)
+- **v2.3 additions**: Auto-DeX on plug-in (auto-starts DeX + taskbar home when device connects), saved Profiles (save/load/delete full option sets in config.json), DeX DPI control (--new-display=WxH/DPI, tested 160), simultaneous DeX + phone mirror (2 scrcpy instances, one device — verified working), DeX-display screenshots (screencap -d <id> works on EMUI 12), scrcpy shortcut cheatsheet dialog
+- Sessions refactored: sessions[serial] = {procs: [...], mode, user_stop} — multi-proc aware start/stop/watchdog; DeX auto-runs dex_home 6s after start
+- screencap -d verified: returns PNG of virtual display; --wallpaper flag does NOT exist in scrcpy 4.1
+- **Outcome**: v2.3 live (pythonw 4572); live test: DeX display 11 w/ DPI 160 + mirror session simultaneously + taskbar home + DeX screenshot all verified in one run
 ### Top Repos by Stars
 | Stars | Repo | Lesson |
 |-------|------|--------|
