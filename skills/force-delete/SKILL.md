@@ -1,6 +1,9 @@
 ---
 name: force-delete
+version: 1.0.0
+author: Abdox
 description: Automates the removal of protected directories that throw **"Access is denied"** by: - Taking ownership (`takeown /A`) - Granting Administrators full control (`icacls /grant`) - Clearing restrictive attributes (`attrib`) - Deleting recursively (`Remove-Item -Recurse -Force`)
+  TRIGGER PHRASES: "force delete, access is denied, delete locked folder, take ownership"
 ---
 
 # Force‑Delete & Disk‑Cleanup Skill

@@ -1,5 +1,7 @@
 ---
 name: windows-shortcut-repair
+version: 1.0.0
+author: Abdox
 description: ULTRA-ADVANCED Windows Shortcut Repair — GUI + CLI with monitoring, export, backup, and scheduled tasks. Scans and fixes broken .lnk shortcuts with missing icons, broken targets, or incorrect paths across Desktop, Start Menu, Taskbar, and custom folders.
 
 CAPABILITIES:

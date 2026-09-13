@@ -1,6 +1,9 @@
 ---
 name: self-learning
+version: 1.0.0
+author: Abdox
 description: # Self-Learning Engine - ULTRA-ADVANCED v5.0
+  TRIGGER PHRASES: "self-learning, learn from actions, improve over time, autonomous improvement"
 ---
 
 # Skill: self-learning

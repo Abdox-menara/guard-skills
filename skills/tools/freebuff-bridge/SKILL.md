@@ -1,5 +1,7 @@
 ---
 name: freebuff-bridge
+version: 1.0.0
+author: Abdox
 description: |
   ULTRA-ADVANCED Freebuff Bridge — Communicate with Freebuff Desktop AI assistant.
   Switch windows, send messages, read responses, and automate conversations

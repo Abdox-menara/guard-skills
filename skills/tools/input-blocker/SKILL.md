@@ -1,5 +1,7 @@
 ---
 name: input-blocker
+version: 1.0.0
+author: Abdox
 description: Block keyboard and mouse input on Windows until manually unblocked.
   TRIGGER PHRASES: "block keyboard, block mouse, lock input, input blocker"
 ---

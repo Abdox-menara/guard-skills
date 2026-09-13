@@ -1,5 +1,7 @@
 ---
 name: scrcpy-install
+version: 1.0.0
+author: Abdox
 description: |
   ULTRA-ADVANCED Scrcpy Install & Usage — Android screen mirroring via ADB.
   Installs scrcpy v4.1 to PATH, creates shortcuts, and provides PowerShell wrappers

@@ -1,6 +1,9 @@
 ---
 name: desktop-control-mcp
+version: 1.0.0
+author: Abdox
 description: Enhanced Desktop Control MCP Server for advanced Windows PC control with AI/ML integration, enterprise security, and intelligent automation.
+  TRIGGER PHRASES: "desktop control, control my pc, windows automation, mcp server"
 ---
 
 # Desktop Control MCP Skill
