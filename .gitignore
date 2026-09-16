@@ -59,6 +59,7 @@ idm/src-tauri/binaries/
 # Generated data files
 knowledge_base_v2.json
 skills/skills_data.json
+skills/skills_usage.csv
 notes_content.txt
 opencode_notes.md
 settings.ini

@@ -7,6 +7,10 @@
     "vision": {
       "model": "openrouter/nvidia/nemotron-nano-12b-v2-vl:free",
       "description": "Analyze schematic screenshots, symbols, and diagrams"
+    },
+    "electrical": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "description": "EPLAN Electric P8, macros, parts data, terminal diagrams, IEC standards"
     }
   },
   "username": "Abdox",
@@ -165,18 +169,22 @@
         },
         "nvidia/nemotron-nano-12b-v2-vl:free": {
           "name": "Nemotron Nano VL (Free Vision)",
+          "limit": { "context": 32768, "output": 8000 },
           "modalities": { "input": ["text", "image"], "output": ["text"] }
         },
         "google/gemini-2.0-flash-exp:free": {
           "name": "Gemini 2.0 Flash (Free Vision)",
+          "limit": { "context": 32768, "output": 8000 },
           "modalities": { "input": ["text", "image"], "output": ["text"] }
         },
         "meta-llama/llama-3.2-11b-vision-instruct:free": {
           "name": "Llama 3.2 11B Vision (Free)",
+          "limit": { "context": 32768, "output": 8000 },
           "modalities": { "input": ["text", "image"], "output": ["text"] }
         },
         "qwen/qwen-2-vl-7b-instruct:free": {
           "name": "Qwen 2 VL 7B (Free Vision)",
+          "limit": { "context": 32768, "output": 8000 },
           "modalities": { "input": ["text", "image"], "output": ["text"] }
         }
       }
