@@ -11,6 +11,26 @@
     "electrical": {
       "model": "opencode/deepseek-v4-flash-free",
       "description": "EPLAN Electric P8, macros, parts data, terminal diagrams, IEC standards"
+    },
+    "excel": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "description": "Manque workbooks via openpyxl, LAB/TR conventions, C:/cursor workspaces"
+    },
+    "plc": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "description": "PLC SoMachine/TIA/Codesys; no UI tree (absolute coords), .smbp dual-rep never text-edit ladder"
+    },
+    "ocr": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "description": "PDF/scan extraction via PaddleOCR/Tesseract, content-stream searchable PDFs"
+    },
+    "review": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "description": "Pre-commit quality gate: diffs, secret_scan, build_index must PASS"
+    },
+    "docs": {
+      "model": "opencode/nemotron-3-ultra-free",
+      "description": "Keep README/INDEX/docs in sync, regenerate from filesystem"
     }
   },
   "username": "Abdox",
