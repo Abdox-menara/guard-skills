@@ -1,0 +1,1 @@
+{"description": "Dated backup zip of a path with count verification", "name": "backup", "template": "Compress-Archive $ARG1 to H:\\Backups\\<name>-YYYYMMDD.zip, then Expand-Archive to temp and compare category/file counts. Report MB + counts."}

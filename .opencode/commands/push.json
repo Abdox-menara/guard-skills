@@ -1,0 +1,1 @@
+{"description": "Scoped git commit and push (named paths only)", "name": "push", "template": "git add ONLY the named paths ($ARG1), show diff --stat for review, commit with concise message, push origin main. Never sweep unrelated changes."}

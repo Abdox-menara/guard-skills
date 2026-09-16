@@ -1,0 +1,1 @@
+{"description": "AutoCAD Electrical / EPLAN task with electrical agent and IEC standards", "name": "electrical", "template": "Run electrical task with @electrical agent: $ARG1. Workspaces: C:\\cursor\\Autocad electrical expert, C:\\opencodes\\disgnodtique-autocad, C:\\opencodes\\Eplan. Use @vision for schematic images."}

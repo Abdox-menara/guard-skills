@@ -1,0 +1,1 @@
+{"description": "Render DXF to PNG headlessly for vision review", "name": "dxf", "template": "Render $ARG1 with ezdxf (RenderContext + MatplotlibBackend, 14x10in @120dpi, white face) to H:\\ai\\dxf-<name>\\outputs\\. Then read the PNG with @vision and report blocks, labels, missing geometry."}

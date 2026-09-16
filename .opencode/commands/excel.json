@@ -1,0 +1,1 @@
+{"description": "Excel / Manque workbook task: open, read, fill, or fix xlsx files", "name": "excel", "template": "Run Excel task: file=$ARG1 action=$ARG2. Use python openpyxl for reads/writes, Ghost MCP only for unsaved WPS buffers. Save outputs to H:\\ai\\excel-$ARG1\\."}

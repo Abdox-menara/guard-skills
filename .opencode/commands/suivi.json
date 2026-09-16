@@ -1,0 +1,1 @@
+{"description": "SUIVI ANAL1 vs filled-sheet drift check (LAB=LABO, TR=CAPTEUR)", "name": "suivi", "template": "Compare SUIVI ANAL1.xlsx Analyse rows 29-32 cols D-AA against the filled sheet. Print DIFF lines or 'in sync'. Never overwrite a user-edited filled file without diff review."}
