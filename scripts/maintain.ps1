@@ -63,13 +63,20 @@ if ($H_up) {
 }
 
 # 4) Final sweep — build_index.py rewrites skills_index.json with a fresh UTC
-#    timestamp per run, which can land after step 2's git add. Re-add and commit
-#    the tail so the working tree ends clean instead of perpetually dirty.
-git add -A 2>$null
-$tail = git status --short
-if ($tail) {
+#    timestamp per run, and that write can flush after step 2's git add. Retry
+#    add+commit until the working tree is actually clean (bounded, so a runaway
+#    writer can never hang the task).
+for ($attempt = 1; $attempt -le 3; $attempt++) {
+    git add -A 2>$null
+    if (-not (git status --short)) { break }
     git commit -m "Auto-maintenance: index timestamp tail" 2>&1 | Out-Null
     git push 2>&1 | Out-Null
-    Log "tail commit + push ($(@($tail).Count) late changes)"
+    if ($attempt -lt 3) { Start-Sleep -Seconds 2 }
+}
+$leftover = git status --short
+if ($leftover) {
+    Log "WARN: tree still dirty after 3 sweeps: $($leftover -join '; ')"
+} else {
+    Log "working tree clean after final sweep"
 }
 Log "--- done ---"
