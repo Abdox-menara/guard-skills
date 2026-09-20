@@ -1,7 +1,7 @@
 {
  "version": "2.0",
  "created": "2026-06-30",
- "last_updated": "2026-08-24T21:27:15.044160+00:00",
+ "last_updated": "2026-09-20",
  "project": {
   "name": "Guard Skills",
   "location": "C:/opencodes/guard skills",
@@ -717,7 +717,12 @@
   "models": {
    "daily": "opencode/deepseek-v4-flash-free",
    "cheap": "opencode/nemotron-3-ultra-free",
-   "vision": "openrouter/nvidia/nemotron-nano-12b-v2-vl:free"
+   "vision": "openrouter/inclusionai/ling-3.0-flash-vl:free",
+   "vision_verified_date": "2026-09-20",
+   "vision_verified_by": "real-PNG probe (probe-vision-model.ps1); read VISION-PROBE-OK + red square + blue ellipse",
+   "vision_status": "LIVE 200 + OCR correct",
+   "vision_replaces": "nvidia/nemotron-nano-12b-v2-vl:free (RETIRED on OpenRouter)",
+   "paid_fallback": "deepseek/deepseek-v4-flash-vision-exp (needs credits)"
   }
  },
  "knowledge_graph": {

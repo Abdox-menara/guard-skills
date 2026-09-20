@@ -48,7 +48,7 @@ First applied example: `H:\ai\autocad-2024-install\` (real data from the AutoCAD
 | Desktop MCP | Ghost (`ghost do "..."`) |
 | Model (daily) | `opencode/deepseek-v4-flash-free` |
 | Model (cheap) | `opencode/nemotron-3-ultra-free` |
-| Model (vision) | `openrouter/nvidia/nemotron-nano-12b-v2-vl:free` |
+| Model (vision) | `openrouter/inclusionai/ling-3.0-flash-vl:free` (probe-verified 2026-09-20; nemotron-nano-12b-v2-vl:free RETIRED) |
 | Task endings (2026-09-14, standing rule) | ALWAYS end every task with 10+ recommended follow-up tasks in the same context |
 
 ## 3. All Projects (C:\opencodes) — Verified 2026-08-22

@@ -1,1 +1,1 @@
-{"description": "Analyze a schematic screenshot or symbol with the vision model", "name": "schematic", "template": "Read schematic image $ARG1 with @vision (openrouter/nvidia/nemotron-nano-12b-v2-vl:free). Report: components, ratings, wiring, anomalies vs IEC."}
+{"description": "Analyze a schematic screenshot or symbol with the vision model", "name": "schematic", "template": "Read schematic image $ARG1 with @vision (openrouter/inclusionai/ling-3.0-flash-vl:free). Report: components, ratings, wiring, anomalies vs IEC."}

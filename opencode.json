@@ -5,7 +5,7 @@
   "default_agent": "build",
   "agent": {
     "vision": {
-      "model": "openrouter/nvidia/nemotron-nano-12b-v2-vl:free",
+      "model": "openrouter/inclusionai/ling-3.0-flash-vl:free",
       "description": "Analyze schematic screenshots, symbols, and diagrams"
     },
     "electrical": {
@@ -187,24 +187,9 @@
           "name": "GPT-OSS 120B Free (coding, reasoning)",
           "limit": { "context": 131072, "output": 32000 }
         },
-        "nvidia/nemotron-nano-12b-v2-vl:free": {
-          "name": "Nemotron Nano VL (Free Vision)",
-          "limit": { "context": 32768, "output": 8000 },
-          "modalities": { "input": ["text", "image"], "output": ["text"] }
-        },
-        "google/gemini-2.0-flash-exp:free": {
-          "name": "Gemini 2.0 Flash (Free Vision)",
-          "limit": { "context": 32768, "output": 8000 },
-          "modalities": { "input": ["text", "image"], "output": ["text"] }
-        },
-        "meta-llama/llama-3.2-11b-vision-instruct:free": {
-          "name": "Llama 3.2 11B Vision (Free)",
-          "limit": { "context": 32768, "output": 8000 },
-          "modalities": { "input": ["text", "image"], "output": ["text"] }
-        },
-        "qwen/qwen-2-vl-7b-instruct:free": {
-          "name": "Qwen 2 VL 7B (Free Vision)",
-          "limit": { "context": 32768, "output": 8000 },
+        "inclusionai/ling-3.0-flash-vl:free": {
+          "name": "Ling 3.0 Flash VL (Free Vision - probe-verified 2026-09-20)",
+          "limit": { "context": 262144, "output": 8000 },
           "modalities": { "input": ["text", "image"], "output": ["text"] }
         }
       }
