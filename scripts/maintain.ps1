@@ -1,9 +1,12 @@
 # Guard Skills Weekly Maintenance
-# Runs: index rebuild, git commit+push, offsite bundle backup.
+# Runs: validation, secret scan, index rebuild, git commit+push, offsite bundle backup.
 # FIX 2026-09-20: exit 64 (ERROR_NETNAME_DELETED) when H: was unmounted at fire time.
 #   Root cause: every Log() call wrote to H:\Backups\maintain-log.txt via Tee-Object,
 #   so a missing H: killed the whole run before it could record anything.
 #   Now: local-first logging (always succeeds) + H: mirror when reachable + guarded bundle.
+# FIX 2026-09-20 (2): perpetual dirty tree. build_index.py rewrites skills_index.json with
+#   a fresh UTC timestamp and the write flushes asynchronously, racing git add. Restructured:
+#   index build runs LAST, we poll the file hash until stable, then commit exactly once.
 #
 # Log: C:\opencodes\guard skills\maintain-fallback.log  (always   — gitignored)
 #      H:\Backups\maintain-log.txt                       (offsite  — when H: is mounted)
@@ -26,18 +29,29 @@ Set-Location $repo
 $H_up = Test-Path -LiteralPath "H:\Backups"
 Log "--- maintenance start (H: $(if ($H_up) {'mounted -> offsite log'} else {'ABSENT -> local log only'})) ---"
 
-# 1) Rebuild skill index (detects drift)
-python tools\build_index.py 2>&1 | Out-Null
-Log "index rebuilt"
-
-# 1b) Validate library (frontmatter + links) and scan for secrets
+# 1) Validate library (frontmatter + links) and scan for secrets — read-only, run first
 $validation = python tools\validate_skills.py 2>&1
 Log ($validation | Select-Object -First 1)
 if ($LASTEXITCODE -ne 0) { Log "VALIDATION FAILED:"; Log ($validation | Out-String) }
 $secrets = python tools\secret_scan.py 2>&1 | Select-Object -Last 1
 Log "secret scan: $secrets"
 
-# 2) Commit + push if anything changed
+# 2) Rebuild skill index LAST — it rewrites skills_index.json with a fresh UTC timestamp
+#    whose flush races git. Wait for the hash to settle before touching git.
+python tools\build_index.py 2>&1 | Out-Null
+$idx = "$repo\skills_index.json"
+$hash = ''
+$stable = $false
+for ($i = 0; $i -lt 10; $i++) {
+    $cur = (Get-FileHash -LiteralPath $idx -Algorithm MD5).Hash
+    if ($cur -eq $hash) { $stable = $true; break }
+    $hash = $cur
+    Start-Sleep -Seconds 2
+}
+if ($stable) { Log "index rebuilt (hash stable after $($i * 2)s)" }
+else { Log "WARN: skills_index.json still changing after 20s — committing anyway" }
+
+# 3) Commit + push exactly once, now that the writer has settled
 git add -A 2>$null
 $dirty = git status --short
 if ($dirty) {
@@ -48,7 +62,7 @@ if ($dirty) {
     Log "no changes"
 }
 
-# 3) Offsite bundle (keep last 4) — guarded: skipped gracefully when H: is absent
+# 4) Offsite bundle (keep last 4) — guarded: skipped gracefully when H: is absent
 if ($H_up) {
     New-Item -ItemType Directory "H:\Backups" -Force | Out-Null
     $stamp = Get-Date -Format "yyyy-MM-dd"
@@ -62,21 +76,11 @@ if ($H_up) {
     Log "SKIP offsite bundle: H:\Backups not reachable"
 }
 
-# 4) Final sweep — build_index.py rewrites skills_index.json with a fresh UTC
-#    timestamp per run, and that write can flush after step 2's git add. Retry
-#    add+commit until the working tree is actually clean (bounded, so a runaway
-#    writer can never hang the task).
-for ($attempt = 1; $attempt -le 3; $attempt++) {
-    git add -A 2>$null
-    if (-not (git status --short)) { break }
-    git commit -m "Auto-maintenance: index timestamp tail" 2>&1 | Out-Null
-    git push 2>&1 | Out-Null
-    if ($attempt -lt 3) { Start-Sleep -Seconds 2 }
-}
+# 5) Verify the tree ended clean
 $leftover = git status --short
 if ($leftover) {
-    Log "WARN: tree still dirty after 3 sweeps: $($leftover -join '; ')"
+    Log "WARN: tree still dirty post-commit: $($leftover -join '; ')"
 } else {
-    Log "working tree clean after final sweep"
+    Log "working tree clean"
 }
 Log "--- done ---"
