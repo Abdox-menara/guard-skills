@@ -123,21 +123,29 @@ def main():
     end = start + (nxt.start() if nxt else len(t) - start)
     new_t = t[:start] + block + "\n\n" + t[end:].lstrip("\n")
     # normalize spacing before next section
-    open(AGENTS, "w", encoding="utf-8", newline="\r\n").write(new_t)
+    # Use a `with` block so the handle flushes before exit (see skills_index.json note).
+    with open(AGENTS, "w", encoding="utf-8", newline="\r\n") as fh:
+        fh.write(new_t)
+        fh.flush()
+        os.fsync(fh.fileno())
 
     counts = {k: len(v) for k, v in idx.items()}
     print(json.dumps({"total": total, **counts}))
-    # also dump machine-readable index
+    # also dump machine-readable index.
+    # NOTE: must use a `with` block / explicit flush+close. A bare open() passed to
+    # json.dump relies on GC to close the handle, so the write flushes seconds after
+    # the process exits — racing git add in maintain.ps1 and leaving the tree
+    # perpetually dirty. Same for AGENTS.md above.
     jp = os.path.join(ROOT, "skills_index.json")
-    json.dump(
-        {
-            "generated": datetime.now(timezone.utc).isoformat(),
-            "counts": counts,
-            "index": {k: [{"name": n, "desc": d} for n, d in v] for k, v in idx.items()},
-        },
-        open(jp, "w", encoding="utf-8"),
-        indent=1,
-    )
+    payload = {
+        "generated": datetime.now(timezone.utc).isoformat(),
+        "counts": counts,
+        "index": {k: [{"name": n, "desc": d} for n, d in v] for k, v in idx.items()},
+    }
+    with open(jp, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, indent=1)
+        fh.flush()
+        os.fsync(fh.fileno())
 
 
 if __name__ == "__main__":

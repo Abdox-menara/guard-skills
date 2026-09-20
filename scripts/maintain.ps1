@@ -36,20 +36,22 @@ if ($LASTEXITCODE -ne 0) { Log "VALIDATION FAILED:"; Log ($validation | Out-Stri
 $secrets = python tools\secret_scan.py 2>&1 | Select-Object -Last 1
 Log "secret scan: $secrets"
 
-# 2) Rebuild skill index LAST — it rewrites skills_index.json with a fresh UTC timestamp
-#    whose flush races git. Wait for the hash to settle before touching git.
+# 2) Rebuild skill index LAST — it rewrites skills_index.json with a fresh UTC
+#    timestamp. build_index.py now flushes+fsyncs on exit (fixed 2026-09-20: a bare
+#    open() passed to json.dump relied on GC, so the write landed seconds late and
+#    raced git add, leaving the tree perpetually dirty). Poll briefly as a safety net.
 python tools\build_index.py 2>&1 | Out-Null
 $idx = "$repo\skills_index.json"
 $hash = ''
 $stable = $false
-for ($i = 0; $i -lt 10; $i++) {
+for ($i = 0; $i -lt 5; $i++) {
     $cur = (Get-FileHash -LiteralPath $idx -Algorithm MD5).Hash
     if ($cur -eq $hash) { $stable = $true; break }
     $hash = $cur
-    Start-Sleep -Seconds 2
+    Start-Sleep -Seconds 1
 }
-if ($stable) { Log "index rebuilt (hash stable after $($i * 2)s)" }
-else { Log "WARN: skills_index.json still changing after 20s — committing anyway" }
+if ($stable) { Log "index rebuilt (hash stable)" }
+else { Log "WARN: skills_index.json still changing — committing anyway" }
 
 # 3) Commit + push exactly once, now that the writer has settled
 git add -A 2>$null
